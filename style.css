@@ -1,0 +1,376 @@
+/* General styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #92ff44;
+}
+
+a:hover {
+    color: #92ff44;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+
+/* Header styles */
+.header {
+    background-color: #2f5356;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #84d1c6;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.site-title {
+    font-size: 1.8em;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li a {
+    font-weight: 700;
+    padding: 10px 15px;
+    color: white;
+}
+
+.nav li a:hover {
+    color: #7dff63;
+    outline: 5;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/20230602161539_6fe40edd-25f1-492b-bb00-aaa1cd5e67f21.png') no-repeat center center/cover;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #92ff44;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.image_info {
+    width: 90%;
+}
+
+.cta-button:hover {
+    cursor: pointer;
+    background-color: #19213e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgb(18 40 133 / 88%);
+    color: white;
+}
+
+.wave-container {
+    position: relative;
+    top: -253px;
+    margin: 0px;
+    margin-bottom: -260px;
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* General styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #92ff44;
+}
+
+/* Info Section similar to Hearts & Bones */
+.info-section {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    background-color: #8ecdb8;
+}
+
+.info-item {
+    /* background-color: #dfb9b9; */
+    background-color: #b9dfd1;
+    ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 23%;
+    height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+    cursor: pointer;
+    scale: 105%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Agrega una sombra */
+    color: white;
+}
+
+.overlay {
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: black;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.overlay h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Highlights */
+.highlights {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.highlight-box {
+    text-align: center;
+    max-width: 300px;
+}
+
+.highlight-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.highlight-box p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.highlight-box a {
+    background-color: #92ff44;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.highlight-box a:hover {
+    cursor: pointer;
+    background-color: #19213e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Agrega una sombra */
+    color: white;
+}
+
+/* About Us Section */
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 175px;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2f5356;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-text li {
+    margin: 10px 0;
+}
+
+.about-image {
+    width: 45%;
+    text-align: center;
+}
+
+.about-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+/* Botón que aparece debajo de la sección "Quiénes somos" */
+.cta-button {
+    background-color: #29695c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    cursor: pointer;
+    background-color: #19213e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgb(71 133 77 / 70%);
+    color: white;
+}
+
+/* Footer */
+/* Estilos del footer */
+.footer {
+    background-color: #2f5356;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: relative;
+    height: 50px;
+    margin-top: 66px;
+}
+
+/* Contenedor de la onda en el footer */
+.wave-container-footer {
+    position: relative;
+    top: -236px;
+    margin: 0px;
+    margin-bottom: -260px;
+    height: 50px;
+
+    margin-bottom: -7px;
+    /* Para eliminar el espacio entre la onda y el footer */
+}
+
+.wave-container-footer svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Contenido del footer */
+.footer-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #19213e;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Agrega una sombra */
+}
