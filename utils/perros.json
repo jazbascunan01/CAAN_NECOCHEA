@@ -1,0 +1,66 @@
+[
+    {
+      "nombre": "Tango",
+      "raza": "Mestizo",
+      "edad": 4,
+      "descripcion": "Leal y protector, disfruta de los paseos largos",
+      "imagen": "./images/tango.jpg"
+    },
+    {
+      "nombre": "Teo",
+      "raza": "Mestizo",
+      "edad": 2,
+      "descripcion": "Alegre y sociable, ideal para familias con niños",
+      "imagen": "./images/theo.jpg"
+    },
+    {
+      "nombre": "Tato",
+      "raza": "Mestizo",
+      "edad": 0,
+      "descripcion": "Cariñoso y algo testarudo, adora las siestas al sol",
+      "imagen": "./images/tato.jpg"
+    },
+    {
+      "nombre": "Yaco",
+      "raza": "Mestizo",
+      "edad": 0,
+      "descripcion": "Amigable y juguetón, siempre busca un compañero de juegos",
+      "imagen": "./images/yaco.jpg"
+    },
+    {
+      "nombre": "Bruna",
+      "raza": "Mestizo",
+      "edad": 0,
+      "descripcion": "Energética y protectora, muy leal a su familia",
+      "imagen": "./images/bruna.jpg"
+    },
+    {
+      "nombre": "Kay",
+      "raza": "Mestizo",
+      "edad": 4,
+      "descripcion": "Inteligente y atento, se lleva bien con otros perros",
+      "imagen": "./images/kay.jpg"
+    },
+    {
+      "nombre": "Aurora",
+      "raza": "Mestizo",
+      "edad": 1,
+      "descripcion": "Dulce y curiosa, disfruta explorar nuevos lugares",
+      "imagen": "./images/aurora.jpg"
+    },
+    {
+      "nombre": "Rafa",
+      "raza": "Mestizo",
+      "edad": 0,
+      "descripcion": "Divertido y activo, le encantan los juegos al aire libre",
+      "imagen": "./images/rafa.jpg"
+    },
+    {
+      "nombre": "Clarita",
+      "raza": "Mestizo",
+      "edad": 2,
+      "descripcion": "Tierna y juguetona, perfecta para compañía constante",
+      "imagen": "./images/clarita.jpg"
+    }
+  ]
+  
