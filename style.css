@@ -306,7 +306,9 @@ button {
     cursor: pointer;
     background-color: #19213e;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
-    box-shadow: 0 0 15px rgb(71 133 77 / 70%);
+    /* box-shadow: 0 0 15px rgb(71 133 77 / 70%); */
+    /* box-shadow: 0 0 15px rgb(215 255 80); */
+    box-shadow: 0 0 15px rgb(255 254 32 / 73%);
     color: white;
 }
 
