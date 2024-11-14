@@ -442,6 +442,7 @@ button:hover {
     width: 30%;
     box-shadow: 5px 4px 8px rgb(0 105 48 / 84%);
     transition: transform 0.3s;
+    background-color: #b9dfd1;
   }
   
   .tarjeta-perro:hover {
@@ -577,7 +578,7 @@ button:hover {
 
 .filters button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #2f5356;
     color: white;
     border: none;
     cursor: pointer;
