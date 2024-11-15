@@ -759,3 +759,114 @@ button:hover {
 #nosotros-footer {
     margin-top: 1px;
 }
+/* Estructura de la página */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #8ecdb8;
+    background-size: cover;
+    padding: 20px;
+  }
+  
+  .login-form {
+    background: #b9dfd1; /* Fondo blanco translúcido */
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgb(36 103 54);
+  }
+  
+  h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    font-size: 24px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    font-size: 16px;
+    color: #3f3f3f;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+  }
+  
+  .input-group input:focus {
+    border-color: #4fa3ff;
+    outline: none;
+  }
+  
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-login:hover {
+    background-color: #3a8dce;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #cf2525;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .sign-up-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sign-up-link a {
+    color: #2b8d2b;
+    text-decoration: none;
+  }
+  
+  .sign-up-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilos de respuesta móvil */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 10px;
+    }
+  
+    .login-form {
+      width: 90%;
+      max-width: 400px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  }
+  
