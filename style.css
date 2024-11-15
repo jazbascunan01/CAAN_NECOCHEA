@@ -768,6 +768,7 @@ button:hover {
     background-color: #8ecdb8;
     background-size: cover;
     padding: 20px;
+    margin-top: 0%;
   }
   
   .login-form {
@@ -869,4 +870,30 @@ button:hover {
       font-size: 22px;
     }
   }
+  /* Login Hero */
+  .login-hero {
+    color: #2f5356;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 105px;
+    margin-top: 35px;
+}
+.wave-container#login-wave {
+    position: relative;
+    top: -253px;
+    margin: 0px;
+    margin-bottom: -341px;
+    z-index: -1;
+}
   
+  .login-hero h1 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .login-hero p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 0;
+  }
