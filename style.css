@@ -760,7 +760,7 @@ button:hover {
     margin-top: 1px;
 }
 /* Estructura de la página */
-.login-container {
+.login-container, .register-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -897,3 +897,77 @@ button:hover {
     font-family: 'Arial', sans-serif;
     margin-top: 0;
   }
+  /* Register Form */
+
+
+.register-form {
+    background: #b9dfd1; /* Fondo blanco translúcido */
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 4px 8px rgb(36 103 54);
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    color: #2f5356;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.input-group input:focus {
+    border-color: #92ff44;
+    outline: none;
+}
+
+.btn-next, .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #2f5356;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.btn-next:hover, .btn-submit:hover {
+    background-color: #92ff44;
+}
+
+/* Step Navigation */
+.step {
+    display: none;
+}
+
+.step:first-child {
+    display: block;
+}
+#acept{
+    display: flex;
+}
+.input-group label#terms {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: flex;
+}
+#terms-input{
+    width: 20px;
+}
