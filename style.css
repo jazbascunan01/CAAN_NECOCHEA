@@ -76,6 +76,11 @@ button {
     text-align: center;
 }
 
+.hero#nosotros-hero {
+    background: url('images/Caan.jpg') no-repeat center center/cover;
+    height: 70vh;
+}
+
 .hero-content {
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -130,7 +135,8 @@ button {
 }
 
 /* Info Section */
-.info-section, #contenedor-perros {
+.info-section,
+#contenedor-perros {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
@@ -406,40 +412,49 @@ button:hover {
         padding: 10px;
         display: block;
     }
+
     .nav ul {
         flex-direction: column;
     }
+
     .info-section {
         flex-direction: column;
         align-items: center;
     }
+
     .info-item {
         width: 95%;
         height: auto;
     }
+
     .wave-container-footer {
         top: -139px;
         margin-bottom: -30px;
     }
+
     .footer-content {
         padding: 0px;
     }
 }
 
 
-.contenedor-perros,#contenedor-eventos {
+.contenedor-perros,
+#contenedor-eventos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
     background-color: #8ECDB8;
-  }
-  .tarjeta-image{
+}
+
+.tarjeta-image {
     height: auto;
     width: 100%;
-  }
-  .tarjeta-perro,.tarjeta-evento {
+}
+
+.tarjeta-perro,
+.tarjeta-evento {
     border: 2px solid #c9fbff85;
     border-radius: 8px;
     overflow: hidden;
@@ -447,36 +462,40 @@ button:hover {
     box-shadow: 5px 4px 8px rgb(0 105 48 / 84%);
     transition: transform 0.3s;
     background-color: #b9dfd1;
-  }
-  
-  .tarjeta-perro:hover,.tarjeta-evento:hover {
+}
+
+.tarjeta-perro:hover,
+.tarjeta-evento:hover {
     transform: translateY(-5px);
-  }
-  
-  .tarjeta-perro img {
+}
+
+.tarjeta-perro img {
     width: 100%;
     height: auto;
-  }
-  
-  .tarjeta-perro .detalles, .tarjeta-evento .detalles {
+}
+
+.tarjeta-perro .detalles,
+.tarjeta-evento .detalles {
     padding: 15px;
     text-align: center;
     margin: 5px;
-  }
-  
-  .tarjeta-perro h3,.tarjeta-evento h3 {
+}
+
+.tarjeta-perro h3,
+.tarjeta-evento h3 {
     margin: 0 0 10px;
     color: #333;
     margin: 2%;
-  }
-  
-  .tarjeta-perro p,.tarjeta-evento p {
+}
+
+.tarjeta-perro p,
+.tarjeta-evento p {
     margin: 5px 0;
     color: #555;
     margin: 2%;
-  }
-  
-  .hero#adopt {
+}
+
+.hero#adopt {
     background: url('images/perro_mestizo.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -484,7 +503,8 @@ button:hover {
     align-items: center;
     text-align: center;
 }
-  .hero#event {
+
+.hero#event {
     background: url('images/GettyImages-1423623555.webp') no-repeat center center/cover;
 }
 
@@ -537,9 +557,11 @@ button:hover {
 .hero .cta-button:hover {
     background-color: #1f3d3c;
 }
+
 .wave-container#adopta {
     margin-bottom: -319px;
 }
+
 /* Estilos para la sección de Preguntas Frecuentes */
 .faq {
     padding: 40px 20px;
@@ -570,6 +592,7 @@ button:hover {
     color: #555;
     line-height: 1.6;
 }
+
 .filters {
     background-color: #8ECDB8;
     padding: 20px;
@@ -577,6 +600,7 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
+
 .filters select {
     padding: 10px;
     margin-right: 10px;
@@ -611,4 +635,127 @@ button:hover {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.quienes-somos,
+.nuestro-equipo {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.imagenes-historia img,
+.miembros-equipo .miembro img {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.miembros-equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.miembro {
+    flex-basis: 30%;
+}
+
+.logros-proyectos {
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logros-proyectos h2,
+.quienes-somos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2f5356;
+}
+
+.proyecto {
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #8ecdb8;
+    padding-left: 1rem;
+    width: 85%;
+}
+
+.proyecto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.proyecto p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.quienes-somos {
+    background-color: #8ecdb8;
+}
+
+.nuestros-valores {
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #2f5356;
+    padding-bottom: 100px;
+    background-color: #8ecdb8;
+}
+
+
+.titulo-valores {
+    font-size: 2.5rem;
+    z-index: 2;
+    position: relative;
+}
+
+
+.descripcion-valores {
+    font-size: 1.2rem;
+}
+
+.lista-valores {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-valores li {
+    font-size: 1.1rem;
+}
+
+.valores-wave,
+.valores-wave-bottom {
+    position: relative;
+    margin: 0;
+    top: -95px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: -211px;
+    background-color: #8ecdb8;
+}
+
+.valores-wave svg,
+.valores-wave-bottom svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contenedor-valores {
+    background-color: #8ecdb8;
+}
+
+.nosotros-wave {
+    background-color: #8ecdb8;
+}
+
+#nosotros-footer {
+    margin-top: 1px;
 }
