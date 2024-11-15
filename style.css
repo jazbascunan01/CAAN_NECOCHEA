@@ -427,15 +427,19 @@ button:hover {
 }
 
 
-.contenedor-perros {
+.contenedor-perros,#contenedor-eventos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
+    background-color: #8ECDB8;
   }
-  
-  .tarjeta-perro {
+  .tarjeta-image{
+    height: auto;
+    width: 100%;
+  }
+  .tarjeta-perro,.tarjeta-evento {
     border: 2px solid #c9fbff85;
     border-radius: 8px;
     overflow: hidden;
@@ -445,7 +449,7 @@ button:hover {
     background-color: #b9dfd1;
   }
   
-  .tarjeta-perro:hover {
+  .tarjeta-perro:hover,.tarjeta-evento:hover {
     transform: translateY(-5px);
   }
   
@@ -454,19 +458,19 @@ button:hover {
     height: auto;
   }
   
-  .tarjeta-perro .detalles {
+  .tarjeta-perro .detalles, .tarjeta-evento .detalles {
     padding: 15px;
     text-align: center;
     margin: 5px;
   }
   
-  .tarjeta-perro h3 {
+  .tarjeta-perro h3,.tarjeta-evento h3 {
     margin: 0 0 10px;
     color: #333;
     margin: 2%;
   }
   
-  .tarjeta-perro p {
+  .tarjeta-perro p,.tarjeta-evento p {
     margin: 5px 0;
     color: #555;
     margin: 2%;
@@ -479,6 +483,9 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+  .hero#event {
+    background: url('images/GettyImages-1423623555.webp') no-repeat center center/cover;
 }
 
 /* Estilo para la introducción antes de las tarjetas */

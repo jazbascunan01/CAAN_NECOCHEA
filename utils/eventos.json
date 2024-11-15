@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "Canicross Solidario",
+        "descripcion": "Participa en nuestra carrera junto a tu mascota y colabora con el C.A.A.N.",
+        "fecha": "2024-12-15",
+        "hora": "09:00",
+        "ubicacion": "Parque Municipal",
+        "precio": "$15000",
+        "imagen": "images/canicross.jpg"
+    },
+    {
+        "titulo": "Venta de Calendarios 2025",
+        "descripcion": "Se viene el 2025. Podes adquirirlos a los cobradores que te visitan todos los meses, o podes contactarte por WP a los 468848/471991/595429/569294",
+        "fecha": "2024-11-30",
+        "hora": "10:00",
+        "ubicacion": "Sede C.A.A.N.",
+        "precio": "$2500",
+        "imagen": "images/calendario.jpg"
+    },
+    {
+        "titulo": "Jornada de Castración Masiva",
+        "descripcion": "Ofrecemos una jornada para castrar y esterilizar a tus mascotas.",
+        "fecha": "2024-12-10",
+        "hora": "08:00",
+        "ubicacion": "Clínica Veterinaria Central",
+        "precio": "Gratuito",
+        "imagen": "images/quirofano.jpeg"
+    },
+    {
+        "titulo": "Quirófano Móvil - Ubicaciones del Mes",
+        "descripcion": "Consulta dónde estará nuestro quirófano móvil durante el mes.",
+        "fecha": "2024-12-01",
+        "hora": "Varias Horas",
+        "ubicacion": "Diferentes puntos de la ciudad",
+        "precio": "Consultar tarifas según servicio",
+        "imagen": "images/02-11-FOTO-Quirofano-Movil-Puerto.jpeg"
+    }
+]
