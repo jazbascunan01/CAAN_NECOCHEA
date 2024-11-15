@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 fetch('./utils/perros.json')
   .then(response => response.json())
   .then(perros => {
@@ -16,3 +17,4 @@ fetch('./utils/perros.json')
     });
   })
   .catch(error => console.error('Error cargando los datos:', error));
+});
