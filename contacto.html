@@ -48,6 +48,8 @@
         <h2>Contacto</h2>
         <article class="cont_contacto">
             <article class="contenedor">
+                <!-- DOCUMENTACIÓN -->
+                <!-- https://formsubmit.co/ -->
                 <form id="form_cargar_datos" action="https://formsubmit.co/jazbascunan01@gmail.com" method="post">
                     <label for="Nombre">Nombre</label>
                     <input type="text" name="name" required>
@@ -95,23 +97,7 @@
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <script>
-        // Coordenadas de la intersección de las calles 107 y 66 en Necochea
-        var coordenadas = [-38.568917, -58.766749];
-    
-        // Inicializar el mapa
-        var map = L.map('map').setView(coordenadas, 15);
-    
-        // Añadir capa base (mapa) desde OpenStreetMap
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '© OpenStreetMap contributors'
-        }).addTo(map);
-    
-        // Añadir un marcador en la ubicación deseada
-        L.marker(coordenadas).addTo(map)
-            .bindPopup('Intersección de las calles 107 y 66, Necochea, Buenos Aires')
-            .openPopup();
-    </script>
+    <script src="scripts/contacto.js"></script>
     
 </body>
 
