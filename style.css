@@ -855,7 +855,9 @@ button:hover {
     padding: 20px;
     margin-top: 0%;
 }
-
+.register-container {
+    padding-bottom: 183px;
+}
 .login-form {
     background: #b9dfd1;
     /* Fondo blanco translúcido */
