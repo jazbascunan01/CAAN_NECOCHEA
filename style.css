@@ -1010,3 +1010,70 @@ h2 {
 #terms-input {
     width: 20px;
 }
+/* ================================================================
+  ||                          DONACIONES                          ||
+   ================================================================ */
+.hero#donaciones-hero {
+    background: url('images/donaciones.jpg') no-repeat center center/cover;
+    height: 60vh;
+}
+.wave-container#donar {
+    position: relative;
+    top: -253px;
+    margin: 0px;
+    margin-bottom: -322px;
+}
+.donation-options {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #8ecdb8;
+    padding-bottom: 216px;
+}
+
+.donation-options h2 {
+    font-size: 2.5em;
+    color: #2f5356;
+    margin-bottom: 20px;
+}
+
+.donation-options p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.donation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    box-shadow: 5px 4px 8px rgb(0 105 48 / 84%);
+    transition: transform 0.3s;
+    background-color: #b9dfd1;
+}
+.card:hover {
+    cursor: pointer;
+    scale: 105%;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    color: white;
+}
+.card h3 {
+    font-size: 1.5em;
+    color: #2f5356;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
