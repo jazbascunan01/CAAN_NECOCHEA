@@ -961,7 +961,7 @@ h2 {
     box-shadow: 0 4px 8px rgb(36 103 54);
 }
 
-.register-form h2 {
+.register-form h2, .login-form h2,.filters h2 {
     margin-bottom: 20px;
     color: #2f5356;
     text-align: center;
