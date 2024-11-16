@@ -930,6 +930,25 @@ h2 {
 /* ================================================================
   ||                   SECCIÓN DE REGISTER FORM                  ||
    ================================================================ */
+   
+.progress-container {
+    width: 80%;
+    background-color: #ddd;
+    height: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #2f5356; /* Color de la barra */
+    transition: width 0.3s ease;
+}
 
 .register-form {
     background: #b9dfd1;
