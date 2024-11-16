@@ -133,6 +133,7 @@ button {
     width: 100%;
     height: auto;
 }
+
 .wave-container-footer {
     position: relative;
     top: -236px;
@@ -146,9 +147,11 @@ button {
     width: 100%;
     height: auto;
 }
+
 .wave-container#adopta {
     margin-bottom: -319px;
 }
+
 .valores-wave,
 .valores-wave-bottom {
     position: relative;
@@ -166,9 +169,11 @@ button {
     width: 100%;
     height: auto;
 }
+
 .nosotros-wave {
     background-color: #8ecdb8;
 }
+
 .wave-container#login-wave {
     position: relative;
     top: -253px;
@@ -176,6 +181,7 @@ button {
     margin-bottom: -341px;
     z-index: -1;
 }
+
 /* ================================================================
   ||                  SECCIÓN DE INFORMACIÓN                     ||
    ================================================================ */
@@ -245,7 +251,7 @@ button {
 }
 
 .perro-detalle h2 {
-    color:#2f5356;
+    color: #2f5356;
 }
 
 /* ================================================================
@@ -406,7 +412,8 @@ button {
     align-items: center;
     justify-content: center;
 }
-.logos{
+
+.logos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -417,9 +424,11 @@ button {
     margin: 1%;
     font-size: 14px;
 }
-.cta-button#contactarnos{
+
+.cta-button#contactarnos {
     width: 10%;
 }
+
 button:hover {
     cursor: pointer;
     background-color: #19213e;
@@ -449,7 +458,7 @@ button:hover {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 885px) {
     .menu-toggle {
         display: block;
     }
@@ -580,6 +589,7 @@ button:hover {
 .adoption-button:hover {
     background-color: #1f3d3c;
 }
+
 /* ================================================================
    ||                    SECCIÓN HERO PARA ADOPCIÓN Y EVENTOS      ||
    ================================================================ */
@@ -725,6 +735,7 @@ button:hover {
     height: auto;
     border-radius: 10px;
 }
+
 /* ================================================================
   ||                   SECCIÓN DE QUIENES SOMOS                   ||
    ================================================================ */
@@ -974,7 +985,7 @@ h2 {
 /* ================================================================
   ||                   SECCIÓN DE REGISTER FORM                  ||
    ================================================================ */
-   
+
 .progress-container {
     width: 80%;
     background-color: #ddd;
@@ -990,7 +1001,8 @@ h2 {
 .progress-bar {
     height: 100%;
     width: 0%;
-    background-color: #2f5356; /* Color de la barra */
+    background-color: #2f5356;
+    /* Color de la barra */
     transition: width 0.3s ease;
 }
 
@@ -1004,7 +1016,10 @@ h2 {
     box-shadow: 0 4px 8px rgb(36 103 54);
 }
 
-.register-form h2, .login-form h2,.filters h2,.contacto-section h2 {
+.register-form h2,
+.login-form h2,
+.filters h2,
+.contacto-section h2 {
     margin-bottom: 20px;
     color: #2f5356;
     text-align: center;
@@ -1055,6 +1070,7 @@ h2 {
     margin-top: 5px;
     display: block;
 }
+
 .confirmation-message {
     text-align: center;
     color: #2f5356;
@@ -1097,6 +1113,7 @@ h2 {
 #terms-input {
     width: 20px;
 }
+
 /* ================================================================
   ||                          DONACIONES                          ||
    ================================================================ */
@@ -1104,12 +1121,14 @@ h2 {
     background: url('images/donaciones.jpg') no-repeat center center/cover;
     height: 60vh;
 }
+
 .wave-container#donar {
     position: relative;
     top: -253px;
     margin: 0px;
     margin-bottom: -322px;
 }
+
 .donation-options {
     text-align: center;
     padding: 40px 20px;
@@ -1146,6 +1165,7 @@ h2 {
     transition: transform 0.3s;
     background-color: #b9dfd1;
 }
+
 .card:hover {
     cursor: pointer;
     scale: 105%;
@@ -1153,6 +1173,7 @@ h2 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     color: white;
 }
+
 .card h3 {
     font-size: 1.5em;
     color: #2f5356;
@@ -1164,9 +1185,11 @@ h2 {
     color: #555;
     margin-bottom: 20px;
 }
+
 /* Estilos para la sección de Donar */
 .donar-info {
-    background-color: #8ecdb8;;
+    background-color: #8ecdb8;
+    ;
     padding: 40px 20px;
     text-align: center;
     padding-bottom: 235px;
@@ -1202,6 +1225,7 @@ h2 {
 .donar-info ul li {
     margin-bottom: 8px;
 }
+
 /* Estilos para la sección de Tipos de Alimentos Aceptados */
 .alimentos-donacion {
     background-color: #8ecdb8;
@@ -1239,6 +1263,7 @@ h2 {
     color: #2f5356;
     margin-bottom: 10px;
 }
+
 /* Estilos para los campos adicionales según el método de pago */
 .metodo-info {
     background-color: #f9f9f9;
@@ -1257,7 +1282,8 @@ h2 {
     border: 1px solid #ccc;
 }
 
-#tarjeta-info input[type="text"],.contenedor input[type="text"] {
+#tarjeta-info input[type="text"],
+.contenedor input[type="text"] {
     letter-spacing: 2px;
 }
 
@@ -1369,23 +1395,27 @@ h2 {
     color: #555;
     margin-bottom: 15px;
 }
-.formulario-donacion{
+
+.formulario-donacion {
     align-items: start;
     display: flex;
     flex-direction: column;
 }
+
 .hero#donar-hero {
     background: url('images/dona_comida.jpg') no-repeat center center/cover;
     height: 70vh;
 }
-.logo-redes{
+
+.logo-redes {
     width: 30px;
     margin: 5px;
     border-radius: 50%;
     transition: transform 0.5s, filter 0.5s;
     cursor: pointer;
 }
-.logo-redes:hover{
+
+.logo-redes:hover {
     transform: scale(1.2);
     /* agranda la imagen al hacer hover */
     filter: brightness(1.5);
@@ -1393,13 +1423,15 @@ h2 {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     /* agrega un resplandor blanco al hacer hover */
 }
+
 /* Contact Form Styles */
 .contacto {
     padding: 50px 0;
     background-color: #f7f7f7;
     text-align: center;
 }
-.contacto-section{
+
+.contacto-section {
     background-color: #8ecdb8;
     padding-bottom: 139px;
 }
@@ -1431,7 +1463,8 @@ h2 {
     color: #2f5356;
 }
 
-.contenedor input, .contenedor textarea {
+.contenedor input,
+.contenedor textarea {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
@@ -1440,7 +1473,8 @@ h2 {
     font-family: 'Nunito', sans-serif;
 }
 
-.contenedor input[type="text"], .contenedor input[type="email"] {
+.contenedor input[type="text"],
+.contenedor input[type="email"] {
     width: auto;
     height: 20px;
 }
@@ -1485,7 +1519,95 @@ h2 {
         align-items: center;
     }
 
-    .contenedor, .ubicacion {
+    .contenedor,
+    .ubicacion {
         width: 100%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .header {
+        font-size: small;
+    }
+
+    .info-item {
+        flex: 1 1 calc(45% - 20px);
+        /* 2 columnas en pantallas más pequeñas */
+    }
+
+    .image_info {
+        width: 50%;
+    }
+
+    .cta-button#contactarnos {
+        width: 15%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .header {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 1040px) {
+    .wave-container-footer {
+        top: -216px;
+    }
+}
+
+@media (max-width: 950px) {
+    .wave-container-footer {
+        top: -200px;
+    }
+}
+
+@media (max-width: 880px) {
+    .wave-container-footer {
+        top: -176px;
+    }
+}
+
+@media (max-width: 770px) {
+    .wave-container-footer {
+        top: -143px;
+    }
+
+    .cta-button#contactarnos {
+        width: 20%;
+    }
+}
+
+@media (max-width: 620px) {
+    .wave-container-footer {
+        top: -114px;
+    }
+
+    .cta-button#contactarnos {
+        width: 25%;
+    }
+}
+
+@media (max-width: 490px) {
+    .wave-container-footer {
+        top: -84px;
+    }
+
+    .cta-button#contactarnos {
+        width: 30%;
+    }
+
+    .wave-container {
+        top: -232px;
+    }
+}
+@media (max-width: 430px) {
+    .wave-container {
+        top: -240px;
+    }
+}
+@media (max-width: 355px) {
+    .wave-container-footer {
+        top: -59px;
     }
 }
