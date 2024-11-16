@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const volverLista = document.createElement('button'); // Botón para volver a la lista
   volverLista.textContent = "Volver a la lista";
   volverLista.classList.add('volver-lista');
+  volverLista.classList.add('adoption-button');
   volverLista.style.marginBottom = '20px';
 
   // Función para mostrar los detalles de un perro
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>Raza: ${perro.raza}</p>
       <p>Edad: ${perro.edad} años</p>
       <p>${perro.descripcion}</p>
+      <button class="adoption-button" data-id="${perro.id}">Adoptar</button>
     `;
     detalle.appendChild(detalleContenido);
 
