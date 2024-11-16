@@ -232,6 +232,17 @@ button {
     margin: 0;
 }
 
+.perro-detalle {
+    text-align: center;
+}
+
+.perro-detalle img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* ================================================================
   ||                   SECCIÓN DE DESTACADOS                     ||
    ================================================================ */
@@ -535,6 +546,22 @@ button:hover {
     margin: 5px 0;
     color: #555;
     margin: 2%;
+}
+
+.adoption-button {
+    background-color: #2f5356;
+    color: white;
+    padding: 15px 30px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.adoption-button:hover {
+    background-color: #1f3d3c;
 }
 /* ================================================================
    ||                    SECCIÓN HERO PARA ADOPCIÓN Y EVENTOS      ||

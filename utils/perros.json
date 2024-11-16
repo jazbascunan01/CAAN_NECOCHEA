@@ -1,5 +1,6 @@
 [
     {
+      "id": 1,
       "nombre": "Tango",
       "raza": "Mestizo",
       "edad": 4,
@@ -7,6 +8,7 @@
       "imagen": "./images/tango.jpg"
     },
     {
+      "id": 2,
       "nombre": "Teo",
       "raza": "Mestizo",
       "edad": 2,
@@ -14,6 +16,7 @@
       "imagen": "./images/theo.jpg"
     },
     {
+      "id": 3,
       "nombre": "Tato",
       "raza": "Mestizo",
       "edad": 0,
@@ -21,6 +24,7 @@
       "imagen": "./images/tato.jpg"
     },
     {
+      "id": 4,
       "nombre": "Yaco",
       "raza": "Mestizo",
       "edad": 0,
@@ -28,6 +32,7 @@
       "imagen": "./images/yaco.jpg"
     },
     {
+      "id": 5,
       "nombre": "Bruna",
       "raza": "Mestizo",
       "edad": 0,
@@ -35,6 +40,7 @@
       "imagen": "./images/bruna.jpg"
     },
     {
+      "id": 6,
       "nombre": "Kay",
       "raza": "Mestizo",
       "edad": 4,
@@ -42,6 +48,7 @@
       "imagen": "./images/kay.jpg"
     },
     {
+      "id": 7,
       "nombre": "Aurora",
       "raza": "Mestizo",
       "edad": 1,
@@ -49,6 +56,7 @@
       "imagen": "./images/aurora.jpg"
     },
     {
+      "id": 8,
       "nombre": "Rafa",
       "raza": "Mestizo",
       "edad": 0,
@@ -56,6 +64,7 @@
       "imagen": "./images/rafa.jpg"
     },
     {
+      "id": 9,
       "nombre": "Clarita",
       "raza": "Mestizo",
       "edad": 2,
