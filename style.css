@@ -1342,7 +1342,7 @@ h2 {
     cursor: pointer;
 }
 .logo-redes:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
     /* agranda la imagen al hacer hover */
     filter: brightness(1.5);
     /* resalta la imagen al hacer hover */
