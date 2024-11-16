@@ -23,11 +23,26 @@ function validateStep(step) {
     if (step === "step-2") {
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirm-password").value;
+        const passwordInput = document.getElementById("password");
         const confirmPasswordInput = document.getElementById("confirm-password");
-        const errorSpan = confirmPasswordInput.nextElementSibling;
+
+        if (!validatePassword(password)) {
+            isValid = false;
+            const errorSpan = passwordInput.nextElementSibling;
+            if (errorSpan && errorSpan.classList.contains('error-message')) {
+                errorSpan.textContent = "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula y un número.";
+            } else {
+                const span = document.createElement('span');
+                span.classList.add('error-message');
+                span.style.color = 'red';
+                span.textContent = "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula y un número.";
+                passwordInput.after(span);
+            }
+        }
 
         if (password !== confirmPassword) {
             isValid = false;
+            const errorSpan = confirmPasswordInput.nextElementSibling;
             if (errorSpan && errorSpan.classList.contains('error-message')) {
                 errorSpan.textContent = "Las contraseñas no coinciden.";
             } else {
@@ -44,10 +59,25 @@ function validateStep(step) {
 }
 
 
+function validatePassword(password) {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/; // Expresión regular para la validación
+    return passwordRegex.test(password);
+}
+
+function updateProgress(step) {
+    const totalSteps = 5;
+    const progressBar = document.getElementById("progress-bar");
+    const progressPercentage = (step / totalSteps) * 100;
+    progressBar.style.width = `${progressPercentage}%`;
+}
+
+updateProgress(1);
+
 document.getElementById("next-step-1").addEventListener("click", function() {
     if (validateStep("step-1")) {
         document.getElementById("step-1").style.display = "none";
         document.getElementById("step-2").style.display = "block";
+        updateProgress(2);
     }
 });
 
@@ -55,6 +85,7 @@ document.getElementById("next-step-2").addEventListener("click", function() {
     if (validateStep("step-2")) {
         document.getElementById("step-2").style.display = "none";
         document.getElementById("step-3").style.display = "block";
+        updateProgress(3);
     }
 });
 
@@ -62,6 +93,7 @@ document.getElementById("next-step-3").addEventListener("click", function() {
     if (validateStep("step-3")) {
         document.getElementById("step-3").style.display = "none";
         document.getElementById("step-4").style.display = "block";
+        updateProgress(4);
     }
 });
 
@@ -74,6 +106,7 @@ document.getElementById("submit-form").addEventListener("click", function(event)
 
         document.getElementById("step-4").style.display = "none";
         document.getElementById("step-5").style.display = "block";
+        updateProgress(5);
     }
 });
 
