@@ -376,7 +376,7 @@ button {
     text-align: center;
     padding: 5px 0;
     position: relative;
-    height: 50px;
+    height: 200px;
     margin-top: 66px;
 }
 
@@ -385,13 +385,25 @@ button {
     position: relative;
     z-index: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-content p {
-    margin: 0;
+    margin: 1%;
     font-size: 14px;
 }
-
+.cta-button#contactarnos{
+    width: 10%;
+}
 button:hover {
     cursor: pointer;
     background-color: #19213e;
@@ -960,7 +972,7 @@ h2 {
     box-shadow: 0 4px 8px rgb(36 103 54);
 }
 
-.register-form h2, .login-form h2,.filters h2 {
+.register-form h2, .login-form h2,.filters h2,.contacto-section h2 {
     margin-bottom: 20px;
     color: #2f5356;
     text-align: center;
@@ -1213,7 +1225,7 @@ h2 {
     border: 1px solid #ccc;
 }
 
-#tarjeta-info input[type="text"] {
+#tarjeta-info input[type="text"],.contenedor input[type="text"] {
     letter-spacing: 2px;
 }
 
@@ -1348,4 +1360,100 @@ h2 {
     /* resalta la imagen al hacer hover */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
     /* agrega un resplandor blanco al hacer hover */
+}
+/* Contact Form Styles */
+.contacto {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+.contacto-section{
+    background-color: #8ecdb8;
+    padding-bottom: 139px;
+}
+
+.cont_contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: 45%;
+    background-color: #b9dfd1;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor form {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.contenedor label {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2f5356;
+}
+
+.contenedor input, .contenedor textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor input[type="text"], .contenedor input[type="email"] {
+    width: auto;
+    height: 20px;
+}
+
+.contenedor textarea {
+    width: auto;
+    resize: none;
+}
+
+.contenedor button {
+    padding: 10px 20px;
+    background-color: #8ecdb8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor button:hover {
+    background-color: #2f5356;
+}
+
+.ubicacion {
+    width: 45%;
+    height: 400px;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cont_contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor, .ubicacion {
+        width: 100%;
+    }
 }
