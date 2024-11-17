@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "titulo": "Canicross Solidario",
         "descripcion": "Participa en nuestra carrera junto a tu mascota y colabora con el C.A.A.N.",
         "fecha": "2024-12-15",
@@ -9,6 +10,7 @@
         "imagen": "images/canicross.jpg"
     },
     {
+        "id": 2,
         "titulo": "Venta de Calendarios 2025",
         "descripcion": "Se viene el 2025. Podes adquirirlos a los cobradores que te visitan todos los meses, o podes contactarte por WP a los 468848/471991/595429/569294",
         "fecha": "2024-11-30",
@@ -18,6 +20,7 @@
         "imagen": "images/calendario.jpg"
     },
     {
+        "id": 2,
         "titulo": "Jornada de Castración Masiva",
         "descripcion": "Ofrecemos una jornada para castrar y esterilizar a tus mascotas.",
         "fecha": "2024-12-10",
@@ -27,6 +30,7 @@
         "imagen": "images/quirofano.jpeg"
     },
     {
+        "id": 3,
         "titulo": "Quirófano Móvil - Ubicaciones del Mes",
         "descripcion": "Consulta dónde estará nuestro quirófano móvil durante el mes.",
         "fecha": "2024-12-01",
