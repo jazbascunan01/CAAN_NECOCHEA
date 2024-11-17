@@ -1304,7 +1304,7 @@ h2 {
     margin-bottom: 3%;
 }
 
-input[type="select"],#availability {
+input[type="select"],#availability, #pets-allowed {
     background-color: white;
     height: 40px;
     width: 100%;
