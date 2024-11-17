@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.A.A.N. Necochea - Proponer Evento Solidario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/PineTools.com_maxresdefault.png" alt="Logo C.A.A.N." class="logo">
+            <h1 class="site-title">C.A.A.N. NECOCHEA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adoptar.html">Adopciones</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Registro_evento.html">Registrarse</a></li>
+                <li id="user-name-link" class="user-name"></li>
+                <li id="logout-dropdown" class="logout-dropdown">
+                    <a href="#" id="logout-btn">Cerrar sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-hero">
+        <div class="login-hero-content">
+            <h1>Proponer Evento Solidario</h1>
+            <p>Completa el formulario para proponer un evento a beneficio de la comunidad.</p>
+        </div>
+    </section>
+
+    <div class="wave-container" id="login-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#8ecdb8" fill-opacity="1"
+                d="M0,160L30,176C60,192,120,224,180,229.3C240,235,300,213,360,213.3C420,213,480,235,540,234.7C600,235,660,213,720,192C780,171,840,149,900,144C960,139,1020,149,1080,165.3C1140,181,1200,203,1260,202.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <section class="register-container">
+        <div class="register-form">
+            <h2>Proponer Evento Solidario</h2>
+            <section class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </section>
+            <form method="POST" id="register-form" novalidate>
+
+                <!-- Step 1: Event Details -->
+                <div class="step" id="step-1">
+                    <div class="input-group">
+                        <label for="event-name">Nombre del Evento</label>
+                        <input type="text" id="event-name" name="event-name" required placeholder="Introduce el nombre del evento">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="Introduce tu correo electrónico">
+                    </div>
+                    <button type="button" class="btn-next" id="next-step-1">Siguiente</button>
+                </div>
+
+                <!-- Step 2: Date and Location -->
+                <div class="step" id="step-2" style="display:none;">
+                    <div class="input-group">
+                        <label for="date">Fecha del Evento</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="location">Ubicación del Evento</label>
+                        <input type="text" id="location" name="location" required placeholder="Introduce la ubicación del evento">
+                    </div>
+                    <button type="button" class="btn-next" id="next-step-2">Siguiente</button>
+                </div>
+
+                <!-- Step 3: Description and Resources -->
+                <div class="step" id="step-3" style="display:none;">
+                    <div class="input-group">
+                        <label for="description">Descripción del Evento</label>
+                        <textarea id="description" name="description" required placeholder="Describe el evento"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="resources">Recursos Necesarios</label>
+                        <textarea id="resources" name="resources" required placeholder="Indica los recursos necesarios"></textarea>
+                    </div>
+                    <button type="button" class="btn-next" id="next-step-3">Siguiente</button>
+                </div>
+
+                <!-- Step 4: Terms and Conditions -->
+                <div class="step" id="step-4" style="display:none;">
+                    <div class="input-group" id="acept">
+                        <label for="terms" id="terms">
+                            <input type="checkbox" id="terms-input" name="terms" required>
+                            <p>Acepto los términos y condiciones</p>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-submit" id="submit-form">Proponer Evento</button>
+                </div>
+
+                <!-- Step 5: Confirmation -->
+                <div class="step" id="step-5" style="display:none;">
+                    <div class="confirmation-message">
+                        <h3>¡Propuesta enviada con éxito!</h3>
+                        <p>Hemos enviado un email de confirmación a <span id="confirmation-email"></span>.</p>
+                        <p>Por favor, revisa tu bandeja de entrada.</p>
+                    </div>
+                    <button type="submit" class="btn-submit" id="back-home">Volver al Inicio</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="nosotros-footer">
+        <div class="wave-container-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#2f5356" fill-opacity="1"
+                    d="M0,160L40,165.3C80,171,160,181,240,181.3C320,181,400,171,480,176C560,181,640,203,720,213.3C800,224,880,224,960,202.7C1040,181,1120,139,1200,112C1280,85,1360,75,1400,69.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="logos">
+                <a href="https://www.facebook.com/caan.necochea" class="footer-icon" target="_blank"><img
+                        class="logo-redes" src="images/facebook (2).png" alt=""></a>
+                <a href="https://www.instagram.com/caanecochea/?hl=es" class="footer-icon" target="_blank"><img
+                        class="logo-redes" src="images/instagram.png" alt=""></a>
+                <a href="https://wa.me/5492262471991" class="footer-icon" target="_blank"><img class="logo-redes"
+                        src="images/whatsapp.png" alt=""></a>
+            </div>
+            <a href="contacto.html" class="cta-button" id="contactarnos">Contactanos</a>
+            <p>&copy; 2024 C.A.A.N. Necochea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/proponer_eventos.js"></script>
+</body>
+
+</html>
