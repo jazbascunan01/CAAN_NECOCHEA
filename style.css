@@ -1720,3 +1720,6 @@ input[type="textarea"] {
     display: block;
     /* Se hace visible */
 }
+.cta-button#eventos{
+    margin: 10% 1% 1% 1%;
+}

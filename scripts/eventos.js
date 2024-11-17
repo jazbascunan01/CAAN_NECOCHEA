@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (evento.necesitaInscripcion) {
                     const usuarioLogueado = JSON.parse(localStorage.getItem('loggedInUser'));
                     botonInscripcion = usuarioLogueado 
-                        ? `<a href="formulario_eventos.html?evento=${evento.titulo}" class="cta-button">Inscribirse</a>`
+                        ? `<a href="formulario_eventos.html?evento=${evento.titulo}" class="cta-button" id="eventos">Inscribirse</a>`
                         : `<a href="login.html" class="cta-button">Iniciar sesión para inscribirte</a>`;
                 }
 
