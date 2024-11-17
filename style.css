@@ -1613,3 +1613,77 @@ h2 {
         top: -59px;
     }
 }
+/* Estilos para el menú desplegable */
+.user-menu {
+    position: relative;
+}
+
+.user-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.user-menu .dropdown-menu.show {
+    display: block;
+}
+
+.user-menu .dropdown-menu li {
+    list-style-type: none;
+}
+
+.user-menu .dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-menu .dropdown-menu li a:hover {
+    background-color: #f1f1f1;
+}
+/* Estilo para el contenedor del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.show {
+    display: block;  /* Mostrar el dropdown cuando se active */
+}
+
+.user-name {
+    position: relative;
+}
+
+/* Estilo para los enlaces dentro del dropdown */
+/* Estilo para el dropdown */
+.logout-dropdown {
+    display: none;  /* Estará oculto por defecto */
+    background-color: #2f5356;
+    padding: 10px;  /* Espaciado */
+    border-radius: 5px;  /* Bordes redondeados */
+    position: absolute;  /* Para posicionarlo encima del menú */
+    right: 0;  /* Ajustarlo al lado derecho */
+    top: 68px;
+    color: white;
+}
+
+.logout-dropdown a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Mostrar el dropdown cuando la clase 'show' esté presente */
+.logout-dropdown.show {
+    display: block;  /* Se hace visible */
+}

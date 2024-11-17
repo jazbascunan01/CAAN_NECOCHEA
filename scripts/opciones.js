@@ -1,15 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
-
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-    document.querySelector('.logo-container').addEventListener('click', function() {
-        window.location.href = 'index.html';
-    });
-});
-
 // Función para actualizar el menú de navegación y mostrar el nombre del usuario
 function updateNav() {
     const user = JSON.parse(localStorage.getItem('loggedInUser')); // Obtener el usuario desde localStorage
