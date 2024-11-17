@@ -1,6 +1,5 @@
-let perrosData = []; // Variable para guardar los datos de los perros
-
 document.addEventListener('DOMContentLoaded', function () {
+  let perrosData = []; // Variable para guardar los datos de los perros
   const contenedor = document.getElementById('contenedor-perros');
   const detalle = document.getElementById('perro-detalle');
   const volverLista = document.createElement('button'); // Botón para volver a la lista
