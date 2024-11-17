@@ -81,6 +81,7 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 70vh;
 }
 
 .hero#nosotros-hero {
@@ -94,6 +95,7 @@ button {
     padding: 20px;
     border-radius: 5px;
     background: rgb(43 36 2 / 50%);
+    background: rgb(46 75 41 / 50%);
 }
 
 .cta-button {
@@ -603,15 +605,16 @@ button:hover {
    ================================================================ */
 .hero#adopt {
     background: url('images/perro_mestizo.jpg') no-repeat center center/cover;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 70vh;
 }
 
 .hero#event {
     background: url('images/GettyImages-1423623555.webp') no-repeat center center/cover;
+    height: 70vh;
 }
 
 /* ================================================================
@@ -640,6 +643,7 @@ button:hover {
     color: white;
     padding: 60px 20px;
     text-align: center;
+    height: 70vh;
 }
 
 .hero h2 {
