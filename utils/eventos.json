@@ -6,7 +6,8 @@
         "hora": "09:00",
         "ubicacion": "Parque Municipal",
         "precio": "$15000",
-        "imagen": "images/canicross.jpg"
+        "imagen": "images/canicross.jpg",
+        "necesitaInscripcion": true
     },
     {
         "titulo": "Venta de Calendarios 2025",
@@ -15,7 +16,8 @@
         "hora": "10:00",
         "ubicacion": "Sede C.A.A.N.",
         "precio": "$2500",
-        "imagen": "images/calendario.jpg"
+        "imagen": "images/calendario.jpg",
+        "necesitaInscripcion": false
     },
     {
         "titulo": "Jornada de Castración Masiva",
@@ -24,7 +26,8 @@
         "hora": "08:00",
         "ubicacion": "Clínica Veterinaria Central",
         "precio": "Gratuito",
-        "imagen": "images/quirofano.jpeg"
+        "imagen": "images/quirofano.jpeg",
+        "necesitaInscripcion": true
     },
     {
         "titulo": "Quirófano Móvil - Ubicaciones del Mes",
@@ -33,6 +36,7 @@
         "hora": "Varias Horas",
         "ubicacion": "Diferentes puntos de la ciudad",
         "precio": "Gratuito",
-        "imagen": "images/02-11-FOTO-Quirofano-Movil-Puerto.jpeg"
+        "imagen": "images/02-11-FOTO-Quirofano-Movil-Puerto.jpeg",
+        "necesitaInscripcion": false
     }
 ]

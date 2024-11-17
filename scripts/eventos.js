@@ -7,6 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 const tarjeta = document.createElement('div');
                 tarjeta.classList.add('tarjeta-evento');
 
+                // Verificar si el evento necesita inscripción
+                let botonInscripcion = '';
+                if (evento.necesitaInscripcion) {
+                    const usuarioLogueado = JSON.parse(localStorage.getItem('loggedInUser'));
+                    botonInscripcion = usuarioLogueado 
+                        ? `<a href="formulario_eventos.html?evento=${evento.titulo}" class="cta-button">Inscribirse</a>`
+                        : `<a href="login.html" class="cta-button">Iniciar sesión para inscribirte</a>`;
+                }
+
                 tarjeta.innerHTML = `
                     <img src="${evento.imagen}" alt="${evento.titulo}" class="tarjeta-image">
                     <div class="tarjeta-content">
@@ -16,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p><strong>Hora:</strong> ${evento.hora}</p>
                         <p><strong>Ubicación:</strong> ${evento.ubicacion}</p>
                         <p><strong>Precio:</strong> ${evento.precio}</p>
+                        ${botonInscripcion}
                     </div>
                 `;
                 contenedorEventos.appendChild(tarjeta);
