@@ -238,21 +238,20 @@ button {
     margin: 0;
 }
 
-.perro-detalle, .evento-detalle {
+.perro-detalle {
     margin-top: 20px;
     text-align: center;
 }
 
-.perro-detalle img, .evento-detalle img {
+.perro-detalle img {
     width: 50%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.perro-detalle h2, .evento-detalle h2 {
-    color:#2f5356;
-
+.perro-detalle h2 {
+    color: #2f5356;
 }
 
 /* ================================================================
@@ -575,7 +574,7 @@ button:hover {
     margin: 2%;
 }
 
-.adoption-button, .event-button {
+.adoption-button {
     background-color: #2f5356;
     color: white;
     padding: 15px 30px;
@@ -587,7 +586,7 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
-.adoption-button:hover, .event-button:hover {
+.adoption-button:hover {
     background-color: #1f3d3c;
 }
 
