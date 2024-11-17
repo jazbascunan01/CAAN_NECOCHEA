@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.A.A.N. Necochea - Inscripción a Evento</title>
+    <title>C.A.A.N. Necochea - Inscripción como Voluntario</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
@@ -34,8 +34,8 @@
 
     <section class="login-hero">
         <div class="login-hero-content">
-            <h1>Inscripción al Evento</h1>
-            <p>Completa el formulario para registrarte al evento.</p>
+            <h1>Inscripción como Voluntario</h1>
+            <p>Completa el formulario para registrarte como voluntario.</p>
         </div>
     </section>
 
@@ -49,11 +49,11 @@
 
     <section class="register-container">
         <div class="register-form">
-            <h2>Inscripción a Evento</h2>
+            <h2>Inscripción como Voluntario</h2>
             <section class="progress-container">
                 <div class="progress-bar" id="progress-bar"></div>
             </section>
-            <form method="POST" id="event-register-form" novalidate>
+            <form method="POST" id="volunteer-register-form" novalidate>
 
                 <!-- Step 1: Información Básica -->
                 <div class="step" id="step-1">
@@ -72,34 +72,29 @@
                     <button type="button" class="btn-next" id="next-step-1">Siguiente</button>
                 </div>
 
-                <!-- Step 2: Detalles del Evento -->
+                <!-- Step 2: Disponibilidad -->
                 <div class="step" id="step-2" style="display:none;">
                     <div class="input-group">
-                        <label for="event-type">Tipo de Evento</label>
-                        <select id="event-type" name="event-type" required>
-                            <option value="">Selecciona el tipo de evento</option>
-                            <option value="conferencia">Conferencia</option>
-                            <option value="taller">Taller</option>
-                            <option value="seminario">Seminario</option>
-                            <option value="otro">Otro</option>
+                        <label for="availability">Disponibilidad</label>
+                        <select id="availability" name="availability" required>
+                            <option value="">Selecciona tu disponibilidad</option>
+                            <option value="mañana">Mañana</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noche">Noche</option>
                         </select>
                     </div>
                     <div class="input-group">
-                        <label for="event-date">Fecha del Evento</label>
-                        <input type="date" id="event-date" name="event-date" required>
+                        <label for="preferred-task">Tarea Preferida</label>
+                        <input type="text" id="preferred-task" name="preferred-task" placeholder="Escribe la tarea que prefieres realizar">
                     </div>
                     <button type="button" class="btn-next" id="next-step-2">Siguiente</button>
                 </div>
 
-                <!-- Step 3: Dirección y Datos Adicionales -->
+                <!-- Step 3: Experiencia Previa -->
                 <div class="step" id="step-3" style="display:none;">
                     <div class="input-group">
-                        <label for="address">Dirección</label>
-                        <input type="text" id="address" name="address" required placeholder="Introduce tu dirección">
-                    </div>
-                    <div class="input-group">
-                        <label for="comments">Comentarios Adicionales</label>
-                        <textarea id="comments" name="comments" placeholder="Escribe algún comentario adicional..."></textarea>
+                        <label for="experience">¿Tienes experiencia previa como voluntario?</label>
+                        <textarea id="experience" name="experience" placeholder="Escribe brevemente tu experiencia previa..."></textarea>
                     </div>
                     <button type="button" class="btn-next" id="next-step-3">Siguiente</button>
                 </div>
@@ -119,7 +114,7 @@
                 <div class="step" id="step-5" style="display:none;">
                     <div class="confirmation-message">
                         <h3>¡Inscripción Exitosa!</h3>
-                        <p>Gracias por inscribirte al evento. Hemos enviado un email de confirmación a <span id="confirmation-email"></span>.</p>
+                        <p>Gracias por inscribirte como voluntario. Hemos enviado un email de confirmación a <span id="confirmation-email"></span>.</p>
                         <p>Por favor, revisa tu bandeja de entrada.</p>
                     </div>
                     <button type="submit" class="btn-submit" id="back-home">Volver al Inicio</button>
@@ -128,7 +123,6 @@
             </form>
         </div>
     </section>
-
     <footer class="footer" id="nosotros-footer">
         <div class="wave-container-footer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -152,7 +146,7 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-    <script src="scripts/eventos_formularios.js"></script>
+    <script src="scripts/voluntario.js"></script>
 </body>
 
 </html>
