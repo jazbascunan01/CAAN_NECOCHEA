@@ -19,7 +19,7 @@ function validateStep(step) {
             errorSpan.textContent = '';
         }
     });
-
+    
     // Validación adicional para el paso 2 (disponibilidad)
     if (step === "step-2") {
         const availability = document.getElementById("availability");
@@ -79,9 +79,19 @@ function updateProgress(step) {
     progressBar.style.width = `${progressPercentage}%`;
 }
 
+const user = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (user) {
+        // Prellenar el formulario con los datos del usuario
+        document.getElementById('full-name').value = user.name;
+        document.getElementById('email').value = user.email;
+        document.getElementById('phone').value = user.phone;
+        document.getElementById('address').value = user.address;
+    }
+
 updateProgress(1);
 
-document.getElementById("next-step-1").addEventListener("click", function() {
+document.getElementById("next-step-1").addEventListener("click", function () {
     if (validateStep("step-1")) {
         document.getElementById("step-1").style.display = "none";
         document.getElementById("step-2").style.display = "block";
@@ -89,7 +99,7 @@ document.getElementById("next-step-1").addEventListener("click", function() {
     }
 });
 
-document.getElementById("next-step-2").addEventListener("click", function() {
+document.getElementById("next-step-2").addEventListener("click", function () {
     if (validateStep("step-2")) {
         document.getElementById("step-2").style.display = "none";
         document.getElementById("step-3").style.display = "block";
@@ -97,7 +107,7 @@ document.getElementById("next-step-2").addEventListener("click", function() {
     }
 });
 
-document.getElementById("next-step-3").addEventListener("click", function() {
+document.getElementById("next-step-3").addEventListener("click", function () {
     if (validateStep("step-3")) {
         document.getElementById("step-3").style.display = "none";
         document.getElementById("step-4").style.display = "block";
@@ -105,7 +115,7 @@ document.getElementById("next-step-3").addEventListener("click", function() {
     }
 });
 
-document.getElementById("submit-form").addEventListener("click", function(event) {
+document.getElementById("submit-form").addEventListener("click", function (event) {
     event.preventDefault();
 
     if (validateStep("step-4")) {
@@ -118,7 +128,7 @@ document.getElementById("submit-form").addEventListener("click", function(event)
     }
 });
 
-document.getElementById("back-home").addEventListener("click", function(event) {
+document.getElementById("back-home").addEventListener("click", function (event) {
     event.preventDefault();
     window.location.href = "/index.html";
 });
