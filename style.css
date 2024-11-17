@@ -238,7 +238,10 @@ button {
     margin: 0;
 }
 
-.perro-detalle, .evento-detalle, .confirmacion-adopcion , .mensaje-confirmacion{
+.perro-detalle,
+.evento-detalle,
+.confirmacion-adopcion,
+.mensaje-confirmacion {
     margin-top: 20px;
     text-align: center;
 }
@@ -525,6 +528,10 @@ button:hover {
     justify-content: center;
     padding: 20px;
     background-color: #8ECDB8;
+}
+
+#contenedor-eventos {
+    padding-bottom: 208px;
 }
 
 .tarjeta-image {
@@ -855,9 +862,11 @@ button:hover {
     padding: 20px;
     margin-top: 0%;
 }
+
 .register-container {
     padding-bottom: 183px;
 }
+
 .login-form {
     background: #b9dfd1;
     /* Fondo blanco translúcido */
@@ -1294,17 +1303,20 @@ h2 {
     width: 100%;
     margin-bottom: 3%;
 }
-input[type="select"]{
+
+input[type="select"] {
     background-color: white;
     height: 40px;
     width: 100%;
     border-radius: 5px;
 }
-input[type="textarea"]{
+
+input[type="textarea"] {
     width: 100%;
     height: 100px;
     border-radius: 5px;
 }
+
 #tarjeta-info label,
 #transferencia-info label {
     font-size: 1.1rem;
@@ -1613,16 +1625,19 @@ input[type="textarea"]{
         top: -232px;
     }
 }
+
 @media (max-width: 430px) {
     .wave-container {
         top: -240px;
     }
 }
+
 @media (max-width: 355px) {
     .wave-container-footer {
         top: -59px;
     }
 }
+
 /* Estilos para el menú desplegable */
 .user-menu {
     position: relative;
@@ -1657,6 +1672,7 @@ input[type="textarea"]{
 .user-menu .dropdown-menu li a:hover {
     background-color: #f1f1f1;
 }
+
 /* Estilo para el contenedor del menú desplegable */
 .dropdown-content {
     display: none;
@@ -1668,7 +1684,8 @@ input[type="textarea"]{
 }
 
 .show {
-    display: block;  /* Mostrar el dropdown cuando se active */
+    display: block;
+    /* Mostrar el dropdown cuando se active */
 }
 
 .user-name {
@@ -1678,12 +1695,17 @@ input[type="textarea"]{
 /* Estilo para los enlaces dentro del dropdown */
 /* Estilo para el dropdown */
 .logout-dropdown {
-    display: none;  /* Estará oculto por defecto */
+    display: none;
+    /* Estará oculto por defecto */
     background-color: #2f5356;
-    padding: 10px;  /* Espaciado */
-    border-radius: 5px;  /* Bordes redondeados */
-    position: absolute;  /* Para posicionarlo encima del menú */
-    right: 0;  /* Ajustarlo al lado derecho */
+    padding: 10px;
+    /* Espaciado */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    position: absolute;
+    /* Para posicionarlo encima del menú */
+    right: 0;
+    /* Ajustarlo al lado derecho */
     top: 68px;
     color: white;
 }
@@ -1695,5 +1717,6 @@ input[type="textarea"]{
 
 /* Mostrar el dropdown cuando la clase 'show' esté presente */
 .logout-dropdown.show {
-    display: block;  /* Se hace visible */
+    display: block;
+    /* Se hace visible */
 }
