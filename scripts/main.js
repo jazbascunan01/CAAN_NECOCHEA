@@ -43,9 +43,10 @@ function updateNav() {
             });
         }
 
-    } else {
-        console.log('No se encontró usuario en localStorage, redirigiendo a login');
-        window.location.href = 'login.html';  // Si no hay usuario, redirigir al login
+    }else {
+        // Si no hay usuario, mostrar el enlace de "Iniciar sesión"
+        userNameLink.innerHTML = `<a href="login.html">Iniciar sesión</a>`;  // Mostrar el enlace de login
+        logoutDropdown.style.display = 'none';  // Ocultar el dropdown de logout
     }
 }
 
