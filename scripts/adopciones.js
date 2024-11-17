@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const contenedor = document.getElementById('contenedor-perros');
   const detalle = document.getElementById('perro-detalle');
   const confirmacion = document.getElementById('confirmacion-adopcion');
+  const mensajeConfirmacion = document.getElementById('mensaje-confirmacion');
   const volverLista = document.createElement('button'); // Botón para volver a la lista
   volverLista.textContent = "Volver a la lista";
   volverLista.classList.add('volver-lista');
@@ -51,9 +52,7 @@ function mostrarConfirmacion(perro) {
 
   // Agregar eventos a los botones de confirmación y cancelación
   document.getElementById('confirmar-adopcion').addEventListener('click', function () {
-    alert(`¡Has adoptado a ${perro.nombre}!`);
-    confirmacion.style.display = 'none';
-    contenedor.style.display = 'block';
+    mostrarMensajeConfirmacion(perro);
   });
 
   document.getElementById('cancelar-adopcion').addEventListener('click', function () {
@@ -62,10 +61,33 @@ function mostrarConfirmacion(perro) {
   });
 }
 
-  // Evento para volver a la lista de perros
-  volverLista.addEventListener('click', function () {
-    window.location.href = "/adoptar.html";
+// Función para mostrar el mensaje de confirmación
+function mostrarMensajeConfirmacion(perro) {
+  mensajeConfirmacion.innerHTML = `
+    <h2>¡Adopción Confirmada!</h2>
+    <p>¡Has adoptado a ${perro.nombre}!</p>
+    <button id="volver-inicio" class="adoption-button">Volver al inicio</button>
+  `;
+
+  // Mostrar el mensaje de confirmación y ocultar el contenedor de confirmación
+  mensajeConfirmacion.style.display = 'block';
+  confirmacion.style.display = 'none';
+                
+ 
+
+
+  // Agregar evento al botón "Volver al inicio"
+  document.getElementById('volver-inicio').addEventListener('click', function () {
+    mensajeConfirmacion.style.display = 'none';
+    contenedor.style.display = 'flex';
   });
+}
+
+// Evento para volver a la lista de perros
+volverLista.addEventListener('click', function () {
+  detalle.style.display = 'none';
+  contenedor.style.display = 'flex';
+});
 
   fetch('./utils/perros.json')
     .then(response => response.json())
