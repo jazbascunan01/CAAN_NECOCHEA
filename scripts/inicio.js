@@ -7,3 +7,6 @@ document.querySelector('.event-card').addEventListener('click', function() {
 document.querySelector('.volunteer-card').addEventListener('click', function() {
     window.location.href = 'Registro.html';
 });
+document.querySelector('.donar-card').addEventListener('click', function() {
+    window.location.href = 'donar.html';
+});

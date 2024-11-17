@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar - C.A.A.N. Necochea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/PineTools.com_maxresdefault.png" alt="Logo C.A.A.N." class="logo">
+            <h1 class="site-title">C.A.A.N. NECOCHEA</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="adoptar.html">Adopciones</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="login-hero">
+        <div class="login-hero-content">
+            <h1>Donar Dinero</h1>
+            <p>Con tu ayuda, cubrimos los gastos esenciales para el bienestar de los animales.</p>
+        </div>
+    </section>
+
+    <div class="wave-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#8ecdb8" fill-opacity="1"
+                d="M0,160L30,176C60,192,120,224,180,229.3C240,235,300,213,360,213.3C420,213,480,235,540,234.7C600,235,660,213,720,192C780,171,840,149,900,144C960,139,1020,149,1080,165.3C1140,181,1200,203,1260,202.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+    <section class="donar-info">
+        <section class="donacion-form">
+            <h2>Formulario de Donación</h2>
+            <p>Gracias por tu generoso aporte. Completa el siguiente formulario para hacer tu donación:</p>
+
+            <form action="procesar-donacion.php" method="post" class="formulario-donacion">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="monto">Monto a Donar (en $)</label>
+                <input type="number" id="monto" name="monto" min="1" required>
+
+                <label for="metodo-pago">Método de Pago</label>
+                <select id="metodo-pago" name="metodo_pago" required>
+                    <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+                    <option value="transferencia">Transferencia Bancaria</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+
+                <div id="tarjeta-info" class="metodo-info" style="display:none;">
+                    <label for="numero-tarjeta">Número de Tarjeta</label>
+                    <input type="text" id="numero-tarjeta" name="numero_tarjeta" placeholder="XXXX XXXX XXXX XXXX"
+                        required>
+
+                    <label for="fecha-expiracion">Fecha de Expiración</label>
+                    <input type="month" id="fecha-expiracion" name="fecha_expiracion" required>
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                </div>
+
+                <div id="transferencia-info" class="metodo-info" style="display:none;">
+                    <p>Por favor realiza la transferencia a la siguiente cuenta bancaria:</p>
+                    <ul>
+                        <li>Banco: Banco XYZ</li>
+                        <li>Cuenta: 123456789</li>
+                        <li>CBU: 0000001234567890123456</li>
+                        <li>Alias: CAA.NEC.DONACIONES</li>
+                    </ul>
+                    <p>Una vez realizada la transferencia, por favor ingresa el código de transacción en el siguiente
+                        campo:</p>
+                    <input type="text" id="codigo-transaccion" name="codigo_transaccion"
+                        placeholder="Código de Transacción">
+                </div>
+
+                <div id="paypal-info" class="metodo-info" style="display:none;">
+                    <p>Te redirigiremos a PayPal para completar tu donación de forma segura.</p>
+                    <button type="button" class="cta-button" onclick="window.location.href='https://www.paypal.com';">Ir
+                        a PayPal</button>
+                </div>
+
+            </form>
+            <button type="submit" class="cta-button">Confirmar Donación</button>
+        </section>
+    </section>
+    <footer class="footer"id="nosotros-footer">
+        <div class="wave-container-footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#2f5356" fill-opacity="1"
+                    d="M0,160L40,165.3C80,171,160,181,240,181.3C320,181,400,171,480,176C560,181,640,203,720,213.3C800,224,880,224,960,202.7C1040,181,1120,139,1200,112C1280,85,1360,75,1400,69.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <div class="footer-content">
+            <div class="logos">
+                <a href="https://www.facebook.com/caan.necochea" class="footer-icon" target="_blank"><img
+                        class="logo-redes" src="images/facebook (2).png" alt=""></a>
+                <a href="https://www.instagram.com/caanecochea/?hl=es" class="footer-icon" target="_blank"><img
+                        class="logo-redes" src="images/instagram.png" alt=""></a>
+                <a href="https://wa.me/5492262471991" class="footer-icon" target="_blank"><img class="logo-redes"
+                        src="images/whatsapp.png" alt=""></a>
+            </div>
+            <a href="contacto.html" class="cta-button" id="contactarnos">Contactanos</a>
+            <p>&copy; 2024 C.A.A.N. Necochea. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts/donar.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

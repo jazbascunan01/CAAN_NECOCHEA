@@ -5,4 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
+    document.querySelector('.logo-container').addEventListener('click', function() {
+        window.location.href = 'index.html';
+    });
 });

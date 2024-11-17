@@ -40,6 +40,7 @@ button {
 .logo-container {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo {
@@ -132,13 +133,13 @@ button {
     width: 100%;
     height: auto;
 }
+
 .wave-container-footer {
     position: relative;
     top: -236px;
     margin: 0px;
-    margin-bottom: -260px;
     height: 50px;
-    margin-bottom: -7px;
+    margin-bottom: -51px;
 }
 
 .wave-container-footer svg {
@@ -146,9 +147,11 @@ button {
     width: 100%;
     height: auto;
 }
+
 .wave-container#adopta {
     margin-bottom: -319px;
 }
+
 .valores-wave,
 .valores-wave-bottom {
     position: relative;
@@ -166,9 +169,11 @@ button {
     width: 100%;
     height: auto;
 }
+
 .nosotros-wave {
     background-color: #8ecdb8;
 }
+
 .wave-container#login-wave {
     position: relative;
     top: -253px;
@@ -176,6 +181,7 @@ button {
     margin-bottom: -341px;
     z-index: -1;
 }
+
 /* ================================================================
   ||                  SECCIÓN DE INFORMACIÓN                     ||
    ================================================================ */
@@ -246,6 +252,7 @@ button {
 
 .perro-detalle h2, .evento-detalle h2 {
     color:#2f5356;
+
 }
 
 /* ================================================================
@@ -392,7 +399,7 @@ button {
     text-align: center;
     padding: 5px 0;
     position: relative;
-    height: 50px;
+    height: 200px;
     margin-top: 66px;
 }
 
@@ -401,11 +408,26 @@ button {
     position: relative;
     z-index: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-content p {
-    margin: 0;
+    margin: 1%;
     font-size: 14px;
+}
+
+.cta-button#contactarnos {
+    width: 10%;
 }
 
 button:hover {
@@ -437,7 +459,7 @@ button:hover {
     gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 885px) {
     .menu-toggle {
         display: block;
     }
@@ -714,6 +736,7 @@ button:hover {
     height: auto;
     border-radius: 10px;
 }
+
 /* ================================================================
   ||                   SECCIÓN DE QUIENES SOMOS                   ||
    ================================================================ */
@@ -833,7 +856,9 @@ button:hover {
     padding: 20px;
     margin-top: 0%;
 }
-
+.register-container {
+    padding-bottom: 183px;
+}
 .login-form {
     background: #b9dfd1;
     /* Fondo blanco translúcido */
@@ -963,7 +988,7 @@ h2 {
 /* ================================================================
   ||                   SECCIÓN DE REGISTER FORM                  ||
    ================================================================ */
-   
+
 .progress-container {
     width: 80%;
     background-color: #ddd;
@@ -979,7 +1004,8 @@ h2 {
 .progress-bar {
     height: 100%;
     width: 0%;
-    background-color: #2f5356; /* Color de la barra */
+    background-color: #2f5356;
+    /* Color de la barra */
     transition: width 0.3s ease;
 }
 
@@ -993,7 +1019,10 @@ h2 {
     box-shadow: 0 4px 8px rgb(36 103 54);
 }
 
-.register-form h2 {
+.register-form h2,
+.login-form h2,
+.filters h2,
+.contacto-section h2 {
     margin-bottom: 20px;
     color: #2f5356;
     text-align: center;
@@ -1044,6 +1073,7 @@ h2 {
     margin-top: 5px;
     display: block;
 }
+
 .confirmation-message {
     text-align: center;
     color: #2f5356;
@@ -1086,6 +1116,7 @@ h2 {
 #terms-input {
     width: 20px;
 }
+
 /* ================================================================
   ||                          DONACIONES                          ||
    ================================================================ */
@@ -1093,12 +1124,14 @@ h2 {
     background: url('images/donaciones.jpg') no-repeat center center/cover;
     height: 60vh;
 }
+
 .wave-container#donar {
     position: relative;
     top: -253px;
     margin: 0px;
     margin-bottom: -322px;
 }
+
 .donation-options {
     text-align: center;
     padding: 40px 20px;
@@ -1135,6 +1168,7 @@ h2 {
     transition: transform 0.3s;
     background-color: #b9dfd1;
 }
+
 .card:hover {
     cursor: pointer;
     scale: 105%;
@@ -1142,6 +1176,7 @@ h2 {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     color: white;
 }
+
 .card h3 {
     font-size: 1.5em;
     color: #2f5356;
@@ -1152,4 +1187,430 @@ h2 {
     font-size: 1.1em;
     color: #555;
     margin-bottom: 20px;
+}
+
+/* Estilos para la sección de Donar */
+.donar-info {
+    background-color: #8ecdb8;
+    ;
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 235px;
+}
+
+.donar-info h2 {
+    font-size: 2rem;
+    color: #2f5356;
+    margin-bottom: 15px;
+}
+
+.donar-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.donar-info h3 {
+    font-size: 1.5rem;
+    color: #2f5356;
+    margin-bottom: 10px;
+}
+
+.donar-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.donar-info ul li {
+    margin-bottom: 8px;
+}
+
+/* Estilos para la sección de Tipos de Alimentos Aceptados */
+.alimentos-donacion {
+    background-color: #8ecdb8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.alimentos-donacion h2 {
+    font-size: 2rem;
+    color: #2f5356;
+    margin-bottom: 15px;
+}
+
+.alimentos-donacion p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.alimentos-donacion ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.alimentos-donacion ul li {
+    margin-bottom: 8px;
+}
+
+.alimentos-donacion h3 {
+    font-size: 1.5rem;
+    color: #2f5356;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los campos adicionales según el método de pago */
+.metodo-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.metodo-info input,
+.metodo-info select {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#tarjeta-info input[type="text"],
+.contenedor input[type="text"] {
+    letter-spacing: 2px;
+}
+
+#tarjeta-info input[type="month"],
+#tarjeta-info input[type="text"] {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+#tarjeta-info label,
+#transferencia-info label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+/* Estilo general para la sección de donación */
+.donacion-form {
+    background-color: #b9dfd1;
+    padding: 40px 70px;
+    border-radius: 8px;
+    max-width: max-content;
+    margin: 30px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.donacion-form h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2f5356;
+    margin-bottom: 20px;
+}
+
+.donacion-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.donacion-form label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+}
+
+.donacion-form input[type="text"],
+.donacion-form input[type="email"],
+.donacion-form input[type="number"],
+.donacion-form input[type="month"],
+.donacion-form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.donacion-form input[type="text"]:focus,
+.donacion-form input[type="email"]:focus,
+.donacion-form input[type="number"]:focus,
+.donacion-form input[type="month"]:focus,
+.donacion-form select:focus {
+    outline: none;
+    border-color: #8ecdb8;
+}
+
+.donacion-form input[type="number"] {
+    max-width: 150px;
+}
+
+.donacion-form .metodo-info {
+    background-color: #ddefe2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    width: 93%;
+}
+
+.donacion-form .metodo-info input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.donacion-form .metodo-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+    color: #333;
+}
+
+.donacion-form .metodo-info ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.donacion-form .metodo-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.formulario-donacion {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero#donar-hero {
+    background: url('images/dona_comida.jpg') no-repeat center center/cover;
+    height: 70vh;
+}
+
+.logo-redes {
+    width: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s, filter 0.5s;
+    cursor: pointer;
+}
+
+.logo-redes:hover {
+    transform: scale(1.2);
+    /* agranda la imagen al hacer hover */
+    filter: brightness(1.5);
+    /* resalta la imagen al hacer hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    /* agrega un resplandor blanco al hacer hover */
+}
+
+/* Contact Form Styles */
+.contacto {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.contacto-section {
+    background-color: #8ecdb8;
+    padding-bottom: 139px;
+}
+
+.cont_contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: 45%;
+    background-color: #b9dfd1;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.contenedor form {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.contenedor label {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #2f5356;
+}
+
+.contenedor input,
+.contenedor textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor input[type="text"],
+.contenedor input[type="email"] {
+    width: auto;
+    height: 20px;
+}
+
+.contenedor textarea {
+    width: auto;
+    resize: none;
+}
+
+.contenedor button {
+    padding: 10px 20px;
+    background-color: #8ecdb8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contenedor button:hover {
+    background-color: #2f5356;
+}
+
+.ubicacion {
+    width: 45%;
+    height: 400px;
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cont_contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor,
+    .ubicacion {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .header {
+        font-size: small;
+    }
+
+    .info-item {
+        flex: 1 1 calc(45% - 20px);
+        /* 2 columnas en pantallas más pequeñas */
+    }
+
+    .image_info {
+        width: 50%;
+    }
+
+    .cta-button#contactarnos {
+        width: 15%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .header {
+        font-size: x-small;
+    }
+}
+
+@media (max-width: 1040px) {
+    .wave-container-footer {
+        top: -216px;
+    }
+}
+
+@media (max-width: 950px) {
+    .wave-container-footer {
+        top: -200px;
+    }
+}
+
+@media (max-width: 880px) {
+    .wave-container-footer {
+        top: -176px;
+    }
+}
+
+@media (max-width: 770px) {
+    .wave-container-footer {
+        top: -143px;
+    }
+
+    .cta-button#contactarnos {
+        width: 20%;
+    }
+}
+
+@media (max-width: 620px) {
+    .wave-container-footer {
+        top: -114px;
+    }
+
+    .cta-button#contactarnos {
+        width: 25%;
+    }
+}
+
+@media (max-width: 490px) {
+    .wave-container-footer {
+        top: -84px;
+    }
+
+    .cta-button#contactarnos {
+        width: 30%;
+    }
+
+    .wave-container {
+        top: -232px;
+    }
+}
+@media (max-width: 430px) {
+    .wave-container {
+        top: -240px;
+    }
+}
+@media (max-width: 355px) {
+    .wave-container-footer {
+        top: -59px;
+    }
 }

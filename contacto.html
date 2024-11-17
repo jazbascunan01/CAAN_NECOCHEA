@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donaciones - C.A.A.N. Necochea</title>
+    <title>Contacto - C.A.A.N. Necochea</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -30,39 +32,46 @@
     </header>
     <section class="login-hero">
         <div class="login-hero-content">
-            <h1>Apoya Nuestra Causa</h1>
-            <p>Tu ayuda es esencial para mejorar la vida de los animales. ¡Contribuye y haz la diferencia!</p>
+            <h1>Contáctanos</h1>
+            <p>Puedes ponerte en contacto con nosotros completando el formulario o visitando el predio</p>
         </div>
     </section>
 
-    <div class="wave-container" id="donar">
+    <div class="wave-container" id="login-wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#8ecdb8" fill-opacity="1"
                 d="M0,160L30,176C60,192,120,224,180,229.3C240,235,300,213,360,213.3C420,213,480,235,540,234.7C600,235,660,213,720,192C780,171,840,149,900,144C960,139,1020,149,1080,165.3C1140,181,1200,203,1260,202.7C1320,203,1380,181,1410,170.7L1440,160L1440,320L0,320Z">
             </path>
         </svg>
     </div>
+    <section class="contacto-section">
+        <h2>Contacto</h2>
+        <article class="cont_contacto">
+            <article class="contenedor">
+                <!-- DOCUMENTACIÓN -->
+                <!-- https://formsubmit.co/ -->
+                <form id="form_cargar_datos" action="https://formsubmit.co/jazbascunan01@gmail.com" method="post">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="name" required>
 
-    <section class="donation-options">
-        <h2>Opciones para Donar</h2>
-        <p>Tu contribución nos permite seguir ayudando a animales que lo necesitan. ¡Toda donación cuenta!</p>
-        <div class="donation-cards">
-            <div class="card">
-                <h3>Donar Dinero</h3>
-                <p>Con una donación monetaria puedes ayudarnos a cubrir los gastos de alimentación, salud y esterilización de los animales.</p>
-                <a href="donar_dinero.html" class="cta-button">Donar Ahora</a>
-            </div>
-            <div class="card">
-                <h3>Donar Alimentos</h3>
-                <p>Aceptamos donaciones de alimentos balanceados, croquetas y otros productos esenciales para el bienestar de los animales.</p>
-                <a href="donar_alimentos.html" class="cta-button">Ver más</a>
-            </div>
-            <div class="card">
-                <h3>Ser Voluntario</h3>
-                <p>¿No puedes donar dinero? ¡Dona tu tiempo! Únete como voluntario y marca una diferencia directa en la vida de los animales.</p>
-                <a href="login.html" class="cta-button">Únete Ahora</a>
-            </div>
-        </div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" required>
+
+                    <label for="comments">Mensaje</label>
+                    <textarea name="comments" cols="15" rows="5" required></textarea>
+
+                    <button type="submit" value="Enviar">Enviar</button>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </article>
+
+            <section class="ubicacion">
+                <h3>Ubicación</h3>
+                <div id="map" style="height: 400px;"></div>
+            </section>
+        </article>
     </section>
 
     <footer class="footer" id="nosotros-footer">
@@ -86,6 +95,11 @@
             <p>&copy; 2024 C.A.A.N. Necochea. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="scripts/contacto.js"></script>
+    <script src="scripts/main.js"></script>
+    
 </body>
 
 </html>
