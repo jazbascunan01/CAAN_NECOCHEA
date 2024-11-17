@@ -238,7 +238,7 @@ button {
     margin: 0;
 }
 
-.perro-detalle {
+.perro-detalle, .evento-detalle, .confirmacion-adopcion , .mensaje-confirmacion{
     margin-top: 20px;
     text-align: center;
 }
