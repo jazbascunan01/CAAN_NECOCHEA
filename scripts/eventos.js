@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p><strong>Hora:</strong> ${evento.hora}</p>
                         <p><strong>Ubicación:</strong> ${evento.ubicacion}</p>
                         <p><strong>Precio:</strong> ${evento.precio}</p>
+                        <button class="adoption-button" data-id="${evento.id}">Participar</button>
                     </div>
                 `;
                 contenedorEventos.appendChild(tarjeta);
