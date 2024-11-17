@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let currentStep = 1;
 
+    // Verificar si el usuario está logueado
+    const user = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    if (user) {
+        // Prellenar el formulario con los datos del usuario
+        document.getElementById('email').value = user.email;
+    }
+
     // Actualiza la barra de progreso
     function updateProgress() {
         progressBar.style.width = `${(currentStep - 1) * 25}%`;
