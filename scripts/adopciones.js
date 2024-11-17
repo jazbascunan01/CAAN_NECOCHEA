@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let perrosData = []; // Variable para guardar los datos de los perros
   const contenedor = document.getElementById('contenedor-perros');
   const detalle = document.getElementById('perro-detalle');
+  const confirmacion = document.getElementById('confirmacion-adopcion');
   const volverLista = document.createElement('button'); // Botón para volver a la lista
   volverLista.textContent = "Volver a la lista";
   volverLista.classList.add('volver-lista');
@@ -21,14 +22,45 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>Raza: ${perro.raza}</p>
       <p>Edad: ${perro.edad} años</p>
       <p>${perro.descripcion}</p>
-      <button class="adoption-button" data-id="${perro.id}">Adoptar</button>
+      <button id="adoptar-button" class="adoption-button" data-id="${perro.id}">Adoptar</button>
     `;
     detalle.appendChild(detalleContenido);
 
     // Mostrar el contenedor de detalles y ocultar el contenedor de la lista
     detalle.style.display = 'block';
     contenedor.style.display = 'none';
-  }
+  // Agregar evento al botón "Adoptar"
+  const botonAdoptar = detalle.querySelector('#adoptar-button');
+  botonAdoptar.addEventListener('click', function () {
+    mostrarConfirmacion(perro);
+  });
+}
+
+// Función para mostrar la pantalla de confirmación
+function mostrarConfirmacion(perro) {
+  confirmacion.innerHTML = `
+    <h2>Confirmación de Adopción</h2>
+    <p>¿Estás seguro de que deseas adoptar a ${perro.nombre}?</p>
+    <button id="confirmar-adopcion" class="adoption-button" >Confirmar</button>
+    <button id="cancelar-adopcion" class="adoption-button" >Cancelar</button>
+  `;
+
+  // Mostrar la pantalla de confirmación y ocultar el contenedor de detalles
+  confirmacion.style.display = 'block';
+  detalle.style.display = 'none';
+
+  // Agregar eventos a los botones de confirmación y cancelación
+  document.getElementById('confirmar-adopcion').addEventListener('click', function () {
+    alert(`¡Has adoptado a ${perro.nombre}!`);
+    confirmacion.style.display = 'none';
+    contenedor.style.display = 'block';
+  });
+
+  document.getElementById('cancelar-adopcion').addEventListener('click', function () {
+    confirmacion.style.display = 'none';
+    detalle.style.display = 'block';
+  });
+}
 
   // Evento para volver a la lista de perros
   volverLista.addEventListener('click', function () {
