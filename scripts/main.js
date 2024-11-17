@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
-    document.querySelector('.logo-container').addEventListener('click', function() {
+    document.querySelector('.logo-container').addEventListener('click', function () {
         window.location.href = 'index.html';
     });
 });
@@ -25,7 +25,12 @@ function updateNav() {
         if (loginLink) {
             loginLink.parentElement.remove();  // Remueve el enlace de login si existe
         }
-
+        // Reemplazar el enlace de "Registrarse" por "Opciones"
+        const registerLink = nav.querySelector('li a[href="Registro.html"]');
+        if (registerLink) {
+            registerLink.textContent = 'Opciones';
+            registerLink.href = 'opciones.html';
+        }
         // Actualizar el texto con el nombre del usuario
         userNameLink.innerHTML = `<a href="#">${user.name}</a>`;  // Mostrar el nombre del usuario usando "name"
 
@@ -43,7 +48,7 @@ function updateNav() {
             });
         }
 
-    }else {
+    } else {
         // Si no hay usuario, mostrar el enlace de "Iniciar sesión"
         userNameLink.innerHTML = `<a href="login.html">Iniciar sesión</a>`;  // Mostrar el enlace de login
         logoutDropdown.style.display = 'none';  // Ocultar el dropdown de logout
