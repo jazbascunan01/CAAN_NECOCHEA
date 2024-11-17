@@ -86,7 +86,6 @@ const user = JSON.parse(localStorage.getItem('loggedInUser'));
         document.getElementById('full-name').value = user.name;
         document.getElementById('email').value = user.email;
         document.getElementById('phone').value = user.phone;
-        document.getElementById('address').value = user.address;
     }
 
 updateProgress(1);
