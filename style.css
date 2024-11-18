@@ -1648,6 +1648,12 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .contenedor {
         width: 80%;
     }
+    .ubicacion {
+        width: 75%;
+        height: 400px;
+        position: relative;
+        padding-bottom: 76px;
+    }
 }
 
 @media (max-width: 770px) {
