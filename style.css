@@ -171,9 +171,9 @@ button {
 }
 
 .wave-container#adopta {
-    margin-bottom: -319px;
+    margin-bottom: -256px;
+    top: -246px;
 }
-
 .valores-wave,
 .valores-wave-bottom {
     position: relative;
@@ -1590,6 +1590,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         font-size: 2rem;
         margin-bottom: 20px;
     }
+    .wave-container#adopta {
+        margin-bottom: -236px;
+        top: -222px;
+    }
 }
 @media (max-width: 1200px) {
     .hero h2 {
@@ -1609,7 +1613,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         font-size: small;
     }
 
-    .info-item {
+    .info-item, .tarjeta-perro {
         flex: 1 1 calc(45% - 20px);
         /* 2 columnas en pantallas más pequeñas */
     }
@@ -1679,6 +1683,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         margin: 0px;
         margin-bottom: -159px;
     }
+    .wave-container#adopta {
+        margin-bottom: -192px;
+        top: -159px;
+    }
 }
 
 @media (max-width: 620px) {
@@ -1688,6 +1696,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
 
     .cta-button#contactarnos {
         width: 25%;
+    }
+    .wave-container#adopta {
+        margin-bottom: -167px;
+        top: -146px;
     }
 }
 
@@ -1709,6 +1721,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .wave-container {
         top: -92px;
         margin-bottom: -94px;
+    }
+    .wave-container#adopta {
+        margin-bottom: -130px;
+        top: -123px;
     }
 }
 
