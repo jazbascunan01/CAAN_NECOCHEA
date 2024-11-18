@@ -375,18 +375,6 @@ button {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-text,
-    .about-image {
-        width: 100%;
-    }
-}
-
 .about-text p {
     text-align: justify;
 }
@@ -986,21 +974,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* Estilos de respuesta móvil */
-@media (max-width: 768px) {
-    .login-container {
-        padding: 10px;
-    }
-
-    .login-form {
-        width: 90%;
-        max-width: 400px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-}
 
 /* ================================================================
   ||                   SECCIÓN DE LOGIN HERO                    ||
@@ -1495,6 +1468,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
 .contacto-section {
     background-color: #8ecdb8;
     padding-bottom: 139px;
+    padding-top: 58px;
 }
 
 .cont_contacto {
@@ -1574,17 +1548,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .cont_contacto {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .contenedor,
-    .ubicacion {
-        width: 100%;
-    }
-}
 
 @media (max-width: 1350px) {
     .hero h2 {
@@ -1676,6 +1640,14 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .wave-container-footer {
         top: -176px;
     }
+    .cont_contacto {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contenedor {
+        width: 80%;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1697,7 +1669,29 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         top: -159px;
     }
 }
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+    .login-container {
+        padding: 10px;
+    }
+
+    .login-form {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
 @media (max-width: 620px) {
     .wave-container-footer {
         top: -114px;
