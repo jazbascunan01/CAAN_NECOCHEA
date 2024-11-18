@@ -475,6 +475,7 @@ button:hover {
 
 .nav {
     display: flex;
+    z-index: 20;
 }
 
 .nav-list {
