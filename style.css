@@ -256,7 +256,7 @@ button {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.perro-detalle h2 {
+.perro-detalle h2, .mensaje-confirmacion h2{
     color: #2f5356;
 }
 

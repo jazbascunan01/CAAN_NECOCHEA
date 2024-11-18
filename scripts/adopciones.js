@@ -44,10 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Función para mostrar la pantalla de confirmación
   function mostrarConfirmacion(perro) {
     confirmacion.innerHTML = `
+    <div class="mensaje-confirmacion">
       <h2>Confirmación de Adopción</h2>
       <p>¿Estás seguro de que deseas adoptar a ${perro.nombre}?</p>
       <button id="confirmar-adopcion" class="adoption-button" >Confirmar</button>
       <button id="cancelar-adopcion" class="adoption-button" >Cancelar</button>
+    <div
     `;
 
     // Mostrar la pantalla de confirmación y ocultar el contenedor de detalles
@@ -73,9 +75,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Función para mostrar el mensaje de confirmación
   function mostrarMensajeConfirmacion(perro) {
     mensajeConfirmacion.innerHTML = `
-      <h2>¡Adopción Confirmada!</h2>
-      <p>¡Has adoptado a ${perro.nombre}!</p>
+    <div class="mensaje-confirmacion">
+      <h2>¡Solicitud de adopción confirmada!</h2>
+      <p>¡Has pedido adoptar a ${perro.nombre}!</p>
+      <p>A la brevedad, uno de nuestros voluntarios se contactará con vos para indicarte como continuar.</p>
+      <p>¡Gracias por tu compromiso!</p>
       <button id="volver-inicio" class="adoption-button">Volver al inicio</button>
+    <div>
     `;
 
     // Mostrar el mensaje de confirmación y ocultar el contenedor de confirmación
