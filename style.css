@@ -158,7 +158,7 @@ button {
 
 .wave-container-footer {
     position: relative;
-    top: -236px;
+    top: -244px;
     margin: 0px;
     height: 50px;
     margin-bottom: -51px;
@@ -1595,6 +1595,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         margin-bottom: -236px;
         top: -222px;
     }
+    .wave-container#login-wave {
+        top: -189px;
+        margin-bottom: -261px;
+    }
 }
 @media (max-width: 1200px) {
     .hero h2 {
@@ -1607,6 +1611,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     }
     .hero .cta-button {
         font-size: 0.8rem;
+    }
+    .wave-container#login-wave {
+        top: -146px;
+        margin-bottom: -180px;
     }
 }
 @media (max-width: 1160px) {
@@ -1701,6 +1709,10 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .wave-container#adopta {
         margin-bottom: -167px;
         top: -146px;
+    }
+    .wave-container#login-wave {
+        top: -107px;
+        margin-bottom: -122px;
     }
 }
 
