@@ -67,29 +67,35 @@ button {
     transition: color 0.3s ease;
     position: relative;
 }
+
 .nav li a::after {
     content: '';
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: #b7fca9; /* Color del subrayado */
+    background-color: #b7fca9;
+    /* Color del subrayado */
     bottom: 0;
     left: 0;
     transition: width 0.4s ease;
 }
+
 .nav li a:hover {
     color: #b7fca9;
 }
 
 .nav li a:hover::after {
-    width: 100%; /* Subrayado completo */
+    width: 100%;
+    /* Subrayado completo */
 }
 
 /* Opción para cambiar el fondo al hacer hover */
 .nav li a:hover {
-    background-color: rgba(50, 114, 37, 0.127); /* Fondo semi-transparente */
+    background-color: rgba(50, 114, 37, 0.127);
+    /* Fondo semi-transparente */
     border-radius: 4px;
 }
+
 /* ================================================================
   ||                    SECCIÓN HERO (DESTACADA)                  ||
    ================================================================ */
@@ -174,6 +180,7 @@ button {
     margin-bottom: -256px;
     top: -246px;
 }
+
 .valores-wave,
 .valores-wave-bottom {
     position: relative;
@@ -275,7 +282,8 @@ button {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.perro-detalle h2, .mensaje-confirmacion h2{
+.perro-detalle h2,
+.mensaje-confirmacion h2 {
     color: #2f5356;
 }
 
@@ -330,6 +338,7 @@ button {
     text-align: center;
     justify-content: space-between;
     margin-bottom: 175px;
+    padding-bottom: 79px;
 }
 
 .section-title {
@@ -736,16 +745,24 @@ button:hover {
 }
 
 .filters button {
-    padding: 10px 20px;
-    background-color: #2f5356;
+    background-color: #29695c;
     color: white;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+
 }
 
 .filters button:hover {
-    background-color: #45a049;
+    cursor: pointer;
+    background-color: #1f363d;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+    color: white;
 }
 
 .card {
@@ -1310,18 +1327,26 @@ h2 {
     width: 100%;
     margin-bottom: 3%;
 }
+
 input[type="file"] {
     border-radius: 10px;
 }
 
-input[type="select"],#availability, #pets-allowed,#animal-type {
+input[type="select"],
+#availability,
+#pets-allowed,
+#animal-type {
     background-color: white;
     height: 40px;
     width: 100%;
     border-radius: 5px;
 }
 
-input[type="textarea"],#experience,#animal-condition,#resources,#description {
+input[type="textarea"],
+#experience,
+#animal-condition,
+#resources,
+#description {
     width: 100%;
     height: 100px;
     border-radius: 5px;
@@ -1555,38 +1580,46 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         font-size: 2rem;
         margin-bottom: 20px;
     }
+
     .wave-container#adopta {
         margin-bottom: -236px;
         top: -222px;
     }
+
     .wave-container#login-wave {
         top: -189px;
         margin-bottom: -261px;
     }
 }
+
 @media (max-width: 1200px) {
     .hero h2 {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
+
     .hero p {
         font-size: 1rem;
         margin-bottom: 30px;
     }
+
     .hero .cta-button {
         font-size: 0.8rem;
     }
+
     .wave-container#login-wave {
         top: -146px;
         margin-bottom: -180px;
     }
 }
+
 @media (max-width: 1160px) {
     .header {
         font-size: small;
     }
 
-    .info-item, .tarjeta-perro {
+    .info-item,
+    .tarjeta-perro {
         flex: 1 1 calc(45% - 20px);
         /* 2 columnas en pantallas más pequeñas */
     }
@@ -1616,18 +1649,22 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .wave-container-footer {
         top: -200px;
     }
+
     .hero h2 {
         font-size: 1rem;
         margin-bottom: 20px;
     }
+
     .hero p {
         font-size: 0.7rem;
     }
+
     .hero .cta-button {
         font-size: 0.5rem;
         padding: 10px;
         margin-top: 0px;
     }
+
     .wave-container {
         position: relative;
         top: -205px;
@@ -1640,14 +1677,17 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .wave-container-footer {
         top: -176px;
     }
+
     .cont_contacto {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
+
     .contenedor {
         width: 80%;
     }
+
     .ubicacion {
         width: 75%;
         height: 400px;
@@ -1664,17 +1704,20 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .cta-button#contactarnos {
         width: 20%;
     }
+
     .wave-container {
         position: relative;
         top: -151px;
         margin: 0px;
         margin-bottom: -159px;
     }
+
     .wave-container#adopta {
         margin-bottom: -192px;
         top: -159px;
     }
 }
+
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -1685,6 +1728,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .about-image {
         width: 100%;
     }
+
     .login-container {
         padding: 10px;
     }
@@ -1698,6 +1742,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         font-size: 22px;
     }
 }
+
 @media (max-width: 620px) {
     .wave-container-footer {
         top: -114px;
@@ -1706,10 +1751,12 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     .cta-button#contactarnos {
         width: 25%;
     }
+
     .wave-container#adopta {
         margin-bottom: -167px;
         top: -146px;
     }
+
     .wave-container#login-wave {
         top: -107px;
         margin-bottom: -122px;
@@ -1735,6 +1782,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
         top: -92px;
         margin-bottom: -94px;
     }
+
     .wave-container#adopta {
         margin-bottom: -130px;
         top: -123px;
@@ -1829,6 +1877,7 @@ input[type="textarea"],#experience,#animal-condition,#resources,#description {
     display: block;
     /* Se hace visible */
 }
-.cta-button#eventos{
+
+.cta-button#eventos {
     margin: 10% 1% 1% 1%;
 }
