@@ -775,7 +775,9 @@ button:hover {
     text-align: center;
     background-color: #fff;
 }
-
+.card#donar{
+    width: 280px;
+}
 .card img {
     width: 100%;
     height: auto;
@@ -1321,7 +1323,7 @@ h2 {
 }
 
 #tarjeta-info input[type="text"],
-.contenedor input[type="text"] {
+.contenedor input[type="text"]{
     letter-spacing: 2px;
 }
 
@@ -1338,7 +1340,7 @@ input[type="file"] {
 input[type="select"],
 #availability,
 #pets-allowed,
-#animal-type {
+#animal-type, #payment-method {
     background-color: white;
     height: 40px;
     width: 100%;
@@ -1349,7 +1351,7 @@ input[type="textarea"],
 #experience,
 #animal-condition,
 #resources,
-#description {
+#description, #comments {
     width: 100%;
     height: 100px;
     border-radius: 5px;
@@ -1398,7 +1400,7 @@ input[type="textarea"],
 .donacion-form input[type="email"],
 .donacion-form input[type="number"],
 .donacion-form input[type="month"],
-.donacion-form select {
+.donacion-form select,#transferencia-id, #card-number,#expiry-date,#cvv  {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
@@ -1408,7 +1410,10 @@ input[type="textarea"],
     box-sizing: border-box;
     background-color: #fff;
 }
-
+#transferencia-id, #card-number,#expiry-date,#cvv {
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
 .donacion-form input[type="text"]:focus,
 .donacion-form input[type="email"]:focus,
 .donacion-form input[type="number"]:focus,
@@ -1883,4 +1888,7 @@ input[type="textarea"],
 
 .cta-button#eventos {
     margin: 10% 1% 1% 1%;
+}
+#guia-perritos-hero{
+    background:url(images/guia.jpeg) no-repeat center center / cover;
 }
