@@ -276,15 +276,64 @@ button {
 }
 
 .perro-detalle img {
-    width: 50%;
+    width: 300px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .perro-detalle h2,
-.mensaje-confirmacion h2 {
+.mensaje-confirmacion h2,
+.pantalla-confirmacion h2 {
     color: #2f5356;
+}
+
+.detalle-contenido-container, .pantalla-confirmacion {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 40px;
+    background-color: #8ecdb8;
+    flex-wrap: wrap;
+}
+
+.mensaje-confirmacion {
+    background-color: #8ecdb8;
+    padding: 40px;
+}
+
+.btn-adopcion-confirmar {
+    padding: 12px;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-adopcion-confirmar:hover {
+    background-color: #194d19;
+}
+
+.btn-adopcion-cancelar {
+    padding: 12px;
+    background-color: red;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-adopcion-cancelar:hover {
+    background-color: rgb(152, 29, 29);
+}
+
+.confirmacion-adopcion img {
+    width: 150px;
 }
 
 /* ================================================================

@@ -21,12 +21,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const detalleContenido = document.createElement('div');
     detalleContenido.classList.add('detalle-contenido');
     detalleContenido.innerHTML = `
+    <div class="detalle-contenido-container">
       <img src="${perro.imagen}" alt="Imagen de ${perro.nombre}">
-      <h2>${perro.nombre}</h2>
-      <p>Raza: ${perro.raza}</p>
-      <p>Edad: ${perro.edad} años</p>
-      <p>${perro.descripcion}</p>
-      <button id="adoptar-button" class="adoption-button" data-id="${perro.id}">Adoptar</button>
+      <div class="detalle-info">
+        <h2>${perro.nombre}</h2>
+        <p>Raza: ${perro.raza}</p>
+        <p>Edad: ${perro.edad} años</p>
+        <p>${perro.descripcion}</p>
+        <button id="adoptar-button" class="adoption-button" data-id="${perro.id}">Adoptar</button>
+        </div>
+      </div>
     `;
     detalle.appendChild(detalleContenido);
 
@@ -44,11 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
   // Función para mostrar la pantalla de confirmación
   function mostrarConfirmacion(perro) {
     confirmacion.innerHTML = `
-    <div class="mensaje-confirmacion">
+    <div class="pantalla-confirmacion">
+      <img src="${perro.imagen}" alt="Imagen de ${perro.nombre}">
+      <div>
       <h2>Confirmación de Adopción</h2>
       <p>¿Estás seguro de que deseas adoptar a ${perro.nombre}?</p>
-      <button id="confirmar-adopcion" class="adoption-button" >Confirmar</button>
-      <button id="cancelar-adopcion" class="adoption-button" >Cancelar</button>
+      <button id="cancelar-adopcion" class="btn-adopcion-cancelar" >Cancelar</button>
+      <button id="confirmar-adopcion" class="btn-adopcion-confirmar" >Confirmar</button>
+      </div>
+
     <div
     `;
 
