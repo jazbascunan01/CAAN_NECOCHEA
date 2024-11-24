@@ -57,3 +57,11 @@ function updateNav() {
 document.addEventListener('DOMContentLoaded', function () {
     updateNav();  // Asegúrate de que esto se ejecute cuando la página está completamente cargada
 });
+document.getElementById('toggle-password').addEventListener('click', function () {
+    const passwordInput = document.getElementById('password');
+    const isPassword = passwordInput.type === 'password';
+  
+    passwordInput.type = isPassword ? 'text' : 'password';
+    this.src = isPassword ? 'images/image (30).png' : 'images/image (29).png'; // Cambia el ícono dinámicamente
+  });
+  

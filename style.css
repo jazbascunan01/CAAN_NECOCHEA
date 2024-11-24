@@ -1981,4 +1981,12 @@ input[type="textarea"],
   .input-wrapper input::placeholder {
     color: #aaa;
   }
-  
+  .toggle-password {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #ceebd8;
+    margin-left: 1px;
+    border-radius: 5px;
+    padding: 11px 4px;
+  }
