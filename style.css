@@ -1958,3 +1958,27 @@ input[type="textarea"],
 #guia-perritos-hero{
     background:url(images/guia.jpeg) no-repeat center center / cover;
 }
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid #b9f4d85c;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f1fff030;
+}
+  .input-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .input-wrapper input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  
+  .input-wrapper input::placeholder {
+    color: #aaa;
+  }
+  
