@@ -1152,12 +1152,12 @@ h2 {
     border-color: #92ff44;
     outline: none;
 }
-
 .btn-next,
 .btn-submit {
     width: 100%;
     padding: 12px;
-    background-color: #2f5356;
+/*     background-color: #2f5356; */
+    background-color: green;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1167,7 +1167,8 @@ h2 {
 
 .btn-next:hover,
 .btn-submit:hover {
-    background-color: #92ff44;
+    /* background-color: #92ff44; */
+    background-color: #194d19;
 }
 
 .error-message {
