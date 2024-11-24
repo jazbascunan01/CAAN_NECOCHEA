@@ -114,3 +114,31 @@ document.getElementById("back-home").addEventListener("click", function(event) {
     event.preventDefault();
     window.location.href = "/index.html";
 });
+// Botón Cancelar
+document.querySelectorAll(".btn-cancel").forEach(button => {
+    button.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+});
+document.querySelectorAll(".btn-cancel_1").forEach(button => {
+    button.addEventListener("click", function () {
+        window.location.href = "index.html";
+    });
+});
+
+// Botones Anterior
+document.getElementById("previous-step-2").addEventListener("click", function () {
+    document.getElementById("step-2").style.display = "none";
+    document.getElementById("step-1").style.display = "block";
+    updateProgress(1);
+});
+document.getElementById("previous-step-3").addEventListener("click", function () {
+    document.getElementById("step-3").style.display = "none";
+    document.getElementById("step-2").style.display = "block";
+    updateProgress(2);
+});
+document.getElementById("previous-step-4").addEventListener("click", function () {
+    document.getElementById("step-4").style.display = "none";
+    document.getElementById("step-3").style.display = "block";
+    updateProgress(2);
+});

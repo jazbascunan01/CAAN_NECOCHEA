@@ -67,7 +67,10 @@
                         <input type="email" id="email" name="email" required
                             placeholder="Introduce tu correo electrónico">
                     </div>
-                    <button type="button" class="btn-next" id="next-step-1">Siguiente</button>
+                    <div class="cancelar_siguiente">
+                        <button type="button" class="btn-cancel_1" id="cancel-step-1">Cancelar</button>
+                        <button type="button" class="btn-next btn1" id="next-step-1">Siguiente</button>
+                    </div>
                 </div>
 
                 <!-- Step 2: Password -->
@@ -83,6 +86,11 @@
                             placeholder="Confirma tu contraseña">
                     </div>
                     <button type="button" class="btn-next" id="next-step-2">Siguiente</button>
+                    <div class="cancelar_siguiente">
+
+                        <button type="button" class="btn-previous" id="previous-step-2">Anterior</button>
+                        <button type="button" class="btn-cancel" id="cancel-step-2">Cancelar</button>
+                    </div>
                 </div>
 
                 <!-- Step 3: Profile Info -->
@@ -97,6 +105,11 @@
                         <input type="text" id="address" name="address" required placeholder="Introduce tu dirección">
                     </div>
                     <button type="button" class="btn-next" id="next-step-3">Siguiente</button>
+                    <div class="cancelar_siguiente">
+
+                        <button type="button" class="btn-previous" id="previous-step-3">Anterior</button>
+                        <button type="button" class="btn-cancel" id="cancel-step-3">Cancelar</button>
+                    </div>
                 </div>
 
                 <!-- Step 4: Terms and Conditions -->
@@ -108,6 +121,11 @@
                         </label>
                     </div>
                     <button type="submit" class="btn-submit" id="submit-form">Registrarse</button>
+                    <div class="cancelar_siguiente">
+
+                        <button type="button" class="btn-previous" id="previous-step-4">Anterior</button>
+                        <button type="button" class="btn-cancel" id="cancel-step-4">Cancelar</button>
+                    </div>
                 </div>
 
                 <!-- Step 5: Confirmation -->
