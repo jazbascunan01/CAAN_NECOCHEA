@@ -623,7 +623,9 @@ button:hover {
 #contenedor-eventos {
     padding-bottom: 208px;
 }
-
+.eventos_preg{
+    padding-bottom: 160px!important;
+}
 .tarjeta-image {
     height: auto;
     width: 100%;
