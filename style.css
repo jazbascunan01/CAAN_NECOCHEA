@@ -1348,15 +1348,15 @@ h2 {
     width: 300px;
     text-align: center;
     box-shadow: 5px 4px 8px rgb(0 105 48 / 84%);
-    transition: transform 0.3s;
+    transition: transform 0.3s!important;
     background-color: #b9dfd1;
 }
 
 .card:hover {
     cursor: pointer;
     scale: 105%;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s!important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7)!important;
     color: white;
 }
 
