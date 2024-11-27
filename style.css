@@ -1853,6 +1853,11 @@ input[type="textarea"],
         position: relative;
         padding-bottom: 76px;
     }
+    .logout-dropdown {
+        left: 40px;
+        top: 312px !important;
+        width: 15%;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1920,6 +1925,9 @@ input[type="textarea"],
         top: -107px;
         margin-bottom: -122px;
     }
+    .logout-dropdown {
+        width: 20%;
+    }
 }
 
 @media (max-width: 490px) {
@@ -1946,11 +1954,17 @@ input[type="textarea"],
         margin-bottom: -130px;
         top: -123px;
     }
+    .logout-dropdown {
+        width: 25%;
+    }
 }
 
 @media (max-width: 355px) {
     .wave-container-footer {
         top: -59px;
+    }
+    .logout-dropdown {
+        width: 30%;
     }
 }
 
