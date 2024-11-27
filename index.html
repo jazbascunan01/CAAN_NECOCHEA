@@ -8,6 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -36,8 +43,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content" id="home_hero">
-            <h2>No más perros en la calle, solo en el corazón de un hogar.</h2>
+        <div class="hero-content animate__animated animate__fadeIn" id="home_hero">
+            <h1 class="animate__animated animate__zoomInDown">No más perros en la calle, solo en el corazón de un hogar.</h1>
             <p>Únete a nuestra comunidad y ayuda a cambiar la vida de animales necesitados.</p>
             <a href="Registro.html" class="cta-button">Registrarse</a>
         </div>
@@ -50,28 +57,28 @@
         </svg>
     </div>
     <section class="info-section">
-        <div class="info-item adopt-card">
+        <div class="info-item adopt-card" data-aos="zoom-in-up">
             <img class="image_info" src="images/Adopt.gif" alt="">
             <div class="overlay">
                 <h3>Adopta un Amigo</h3>
                 <p>Encuentra tu mascota ideal y bríndale un hogar lleno de amor.</p>
             </div>
         </div>
-        <div class="info-item volunteer-card">
+        <div class="info-item volunteer-card" data-aos="zoom-in-up">
             <img class="image_info" src="images/Volunteer.gif" alt="">
             <div class="overlay">
                 <h3>Hazte Voluntario</h3>
                 <p>Únete a nuestro equipo y ayuda a cambiar vidas.</p>
             </div>
         </div>
-        <div class="info-item event-card">
+        <div class="info-item event-card" data-aos="zoom-in-up">
             <img class="image_info" src="images/Foster.gif" alt="">
             <div class="overlay">
                 <h3>Eventos Solidarios</h3>
                 <p>Participa en actividades que apoyan la causa animal.</p>
             </div>
         </div>
-        <div class="info-item donar-card">
+        <div class="info-item donar-card"  data-aos="zoom-in-up">
             <img class="image_info" src="images/Donate.gif" alt="">
             <div class="overlay">
                 <h3>Dona</h3>
@@ -82,7 +89,7 @@
     <section class="about-us-section">
         <h2 class="section-title">¿Quiénes somos?</h2>
         <div class="about-content">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-right">
                 <p>Somos una organización sin fines de lucro dedicada a mejorar la vida de los animales en situación de
                     calle. Nuestro objetivo es brindarles una segunda oportunidad a través de la adopción responsable,
                     la concientización y la participación comunitaria.</p>
@@ -94,10 +101,10 @@
                     <li>Apoyar a los animales con necesidades especiales.</li>
                 </ul>
             </div>
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-left">
                 <img src="images/caan-tapa.jpg" alt="Sobre nosotros" class="about-img">
             </div>
-            <a href="Nosotros.html" class="cta-button" id="nosotros">Saber más sobre nosotros</a>
+            <a href="Nosotros.html" class="cta-button" id="nosotros"data-aos="fade-up">Saber más sobre nosotros</a>
         </div>
     </section>
 

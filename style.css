@@ -264,7 +264,7 @@ button {
 .info-item:hover {
     cursor: pointer;
     scale: 105%;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s!important;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     color: white;
 }
@@ -2253,4 +2253,8 @@ button.next {
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+}
+[data-aos] {
+    transition-property: transform, opacity; /* Especifica qué propiedades transicionar */
+    transition-duration: 0.6s; /* Ajusta el tiempo de transición */
 }
