@@ -2187,3 +2187,6 @@ button.next {
     width: 25px;
     height: 25px;
 }
+#adopta-hero{
+    background: url('images/destacada-perros-adoptados.jpg') no-repeat center center/cover; 
+}
