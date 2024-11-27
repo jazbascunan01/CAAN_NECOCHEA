@@ -123,6 +123,8 @@ button {
     background: rgb(43 36 2 / 50%);
     background: rgb(46 75 41 / 55%);
     /* background: rgb(7 40 2 / 66%); */
+    z-index: 10;
+    position: relative;
 
 }
 
@@ -707,6 +709,10 @@ button:hover {
 .hero#event {
     background: url('images/GettyImages-1423623555.webp') no-repeat center center/cover;
     height: 70vh;
+}
+#content_event{
+    z-index: 10;
+    position: relative;
 }
 
 /* ================================================================
