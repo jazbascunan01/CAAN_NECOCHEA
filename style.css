@@ -2170,6 +2170,20 @@ button.prev {
 button.next {
     right: 10px;
 }
-.carrusel_img{
+
+.carrusel_img {
     border-radius: 10px;
+}
+
+.lista-valores.requisitos li {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-left: 200px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+}
+.img_li{
+    width: 25px;
+    height: 25px;
 }
