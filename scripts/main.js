@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+    new WOW().init();
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
 

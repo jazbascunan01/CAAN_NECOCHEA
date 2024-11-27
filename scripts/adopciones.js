@@ -110,27 +110,41 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   fetch('./utils/perros.json')
-    .then(response => response.json())
-    .then(perros => {
-      perrosData = perros; // Actualizar perrosData con los datos obtenidos
-      perros.forEach(perro => {
-        const tarjeta = document.createElement('div');
-        tarjeta.classList.add('tarjeta-perro');
-        tarjeta.innerHTML = `
-          <img src="${perro.imagen}" alt="Imagen de ${perro.nombre}">
-          <h3>${perro.nombre}</h3>
-          <p>Raza: ${perro.raza}</p>
-          <p>Edad: ${perro.edad} años</p>
-          <p>${perro.descripcion}</p>
-          ${user ? `<button class="adoption-button" data-id="${perro.id}">Ver más</button>` : ''}
-        `;
-        contenedor.appendChild(tarjeta);
-      });
+  .then(response => response.json())
+  .then(perros => {
+      perrosData = perros;
+      let offsetMultiplier = 100; // Comienza con 100 para el primer ciclo
 
-      // Agregar evento de clic a los botones "Ver más"
+      const tarjetasHTML = perros.map((perro, index) => {
+          // Calcula el offset, aumentando 50 en cada iteración
+          const offset = index * offsetMultiplier;
+          
+          // Aumenta el offsetMultiplier en 50 para el siguiente ciclo
+          offsetMultiplier += 10;
+
+          return `
+              <div class="tarjeta-perro" 
+                  data-aos="zoom-in-up" 
+                  data-aos-duration="1000" 
+                  data-aos-offset="${offset}">
+                  <img src="${perro.imagen}" alt="Imagen de ${perro.nombre}">
+                  <h3>${perro.nombre}</h3>
+                  <p>Raza: ${perro.raza}</p>
+                  <p>Edad: ${perro.edad} años</p>
+                  <p>${perro.descripcion}</p>
+                  ${user ? `<button class="adoption-button" data-id="${perro.id}">Ver más</button>` : ''}
+              </div>
+          `;
+      }).join('');
+
+      contenedor.innerHTML = tarjetasHTML;
+
+      // Asegúrate de llamar a AOS.refresh después de modificar el DOM
+      AOS.refresh();
+
       agregarEventosVerMas();
-    })
-    .catch(error => console.error('Error cargando los datos:', error));
+  })
+  .catch(error => console.error('Error cargando los datos:', error));
 
   // Función para agregar eventos a los botones "Ver más"
   function agregarEventosVerMas() {

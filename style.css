@@ -638,6 +638,9 @@ button:hover {
     transition: transform 0.3s;
     background-color: #b9dfd1;
 }
+.tarjeta-perro{
+    margin-bottom:40px;
+}
 
 .tarjeta-perro:hover,
 .tarjeta-evento:hover {
