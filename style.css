@@ -2170,3 +2170,6 @@ button.prev {
 button.next {
     right: 10px;
 }
+.carrusel_img{
+    border-radius: 10px;
+}
