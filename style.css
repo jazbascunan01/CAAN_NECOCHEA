@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     color: #333;
     background-color: #eeffef;
+    overflow-x: hidden;
 }
 
 a {
