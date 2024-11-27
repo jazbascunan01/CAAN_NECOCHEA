@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
             data.forEach(evento => {
                 const tarjeta = document.createElement('div');
                 tarjeta.classList.add('tarjeta-evento');
-
+                tarjeta.setAttribute('data-aos', 'fade-up');
                 // Verificar si el evento necesita inscripción
                 let botonInscripcion = '';
                 if (evento.necesitaInscripcion) {
