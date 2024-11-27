@@ -10,6 +10,13 @@
     <link rel="shortcut icon" href="images/PineTools.com_maxresdefault.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+        <!-- WOW.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -34,7 +41,7 @@
         </nav>
     </header>
     <section class="login-hero">
-        <div class="login-hero-content">
+        <div class="login-hero-content  animate__animated animate__fadeIn">
             <h1>Contáctanos</h1>
             <p>Puedes ponerte en contacto con nosotros completando el formulario o visitando el predio</p>
         </div>
@@ -48,8 +55,8 @@
         </svg>
     </div>
     <section class="contacto-section">
-        <h2>Contacto</h2>
-        <article class="cont_contacto">
+        <h2 data-aos="zoom-in">Contacto</h2>
+        <article class="cont_contacto"data-aos="zoom-right">
             <article class="contenedor">
                 <!-- DOCUMENTACIÓN -->
                 <!-- https://formsubmit.co/ -->
@@ -70,7 +77,7 @@
                 </form>
             </article>
 
-            <section class="ubicacion">
+            <section class="ubicacion"data-aos="zoom-left">
                 <h3>Ubicación</h3>
                 <div id="map" style="height: 400px;"></div>
             </section>
