@@ -1802,6 +1802,10 @@ input[type="textarea"],
     .cta-button#contactarnos {
         width: 15%;
     }
+    .wave-container#donar{
+        top: -173px;
+        margin-bottom: -223px;
+    }
 }
 
 @media (max-width: 1020px) {
@@ -1870,6 +1874,10 @@ input[type="textarea"],
         top: 312px !important;
         width: 15%;
     }
+    .wave-container#donar{
+        top: -82px;
+        margin-bottom: -124px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1916,6 +1924,10 @@ input[type="textarea"],
 
     h2 {
         font-size: 22px;
+    }
+    .wave-container#donar{
+        top: 14px;
+        margin-bottom: -11px;
     }
 }
 
@@ -1968,6 +1980,10 @@ input[type="textarea"],
     }
     .logout-dropdown {
         width: 25%;
+    }
+    .wave-container#donar{
+        top: 88px;
+        margin-bottom: 75px;
     }
 }
 
