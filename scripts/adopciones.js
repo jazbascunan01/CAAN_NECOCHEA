@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
           return `
               <div class="tarjeta-perro" 
-                  data-aos="zoom-in-up" 
+                  data-aos="fade-up" 
                   data-aos-duration="1000" 
                   data-aos-offset="${offset}">
                   <img src="${perro.imagen}" alt="Imagen de ${perro.nombre}">
