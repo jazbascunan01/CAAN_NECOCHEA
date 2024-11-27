@@ -61,3 +61,45 @@ function updateCarousel() {
         }, 500);
     }
 }
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-image');
+const imagesArray = document.querySelectorAll('.carrusel_img');
+const closeBtn = document.querySelector('.close');
+const prevModalBtn = document.querySelector('.prev-modal');
+const nextModalBtn = document.querySelector('.next-modal');
+let currentImageIndex = 0;
+
+// Función para abrir el modal con la imagen seleccionada
+function openModal(index) {
+    currentImageIndex = index;
+    modal.style.display = 'block';
+    modalImg.src = imagesArray[currentImageIndex].src;
+}
+
+// Evento para cerrar el modal
+closeBtn.onclick = () => {
+    modal.style.display = 'none';
+};
+
+// Eventos para los botones de navegación dentro del modal
+prevModalBtn.onclick = () => {
+    currentImageIndex = (currentImageIndex - 1 + imagesArray.length) % imagesArray.length;
+    modalImg.src = imagesArray[currentImageIndex].src;
+};
+
+nextModalBtn.onclick = () => {
+    currentImageIndex = (currentImageIndex + 1) % imagesArray.length;
+    modalImg.src = imagesArray[currentImageIndex].src;
+};
+
+// Añadir eventos a cada imagen del carrusel para abrir el modal
+imagesArray.forEach((img, index) => {
+    img.addEventListener('click', () => openModal(index));
+});
+
+// Cerrar el modal si se hace clic fuera de la imagen
+window.onclick = (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+};

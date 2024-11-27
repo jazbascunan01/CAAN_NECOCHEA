@@ -2173,6 +2173,7 @@ button.next {
 
 .carrusel_img {
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .lista-valores.requisitos li {
@@ -2189,4 +2190,53 @@ button.next {
 }
 #adopta-hero{
     background: url('images/destacada-perros-adoptados.jpg') no-repeat center center/cover; 
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.prev-modal, .next-modal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.prev-modal {
+    left: 10px;
+}
+
+.next-modal {
+    right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
 }
