@@ -1,7 +1,7 @@
 /* ================================================================
   ||                        ESTILOS GENERALES                     ||
    ================================================================ */
-   body {
+body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
@@ -122,23 +122,25 @@ button {
     background: rgb(43 36 2 / 50%);
     background: rgb(46 75 41 / 55%);
     /* background: rgb(7 40 2 / 66%); */
-    
+
 }
+
 .hero-content#home_hero {
     color: white;
-/*     background: rgba(0, 0, 0, 0.5); */
+    /*     background: rgba(0, 0, 0, 0.5); */
     padding: 20px;
     border-radius: 5px;
-/*     background: rgb(43 36 2 / 50%);
+    /*     background: rgb(43 36 2 / 50%);
     background: rgb(46 75 41 / 50%); */
-   /*  background: rgb(7 40 2 / 66%); */
+    /*  background: rgb(7 40 2 / 66%); */
     /* background: rgb(50 79 41 / 78%); */
-/*     text-shadow: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
+    /*     text-shadow: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
     text-shadow: 1px 2px 4px black, -2px -2px 15px black, -2px -1px 11px black, 0px -2px 8px black; */
     /* text-shadow: 0 4px 8px rgba(0, 0, 0, 1.75); */
     text-shadow: 1px 8px 8px rgba(0, 0, 0, 1.75);
-   /*  text-shadow: 0px 1px 21px rgb(67 123 69); */
+    /*  text-shadow: 0px 1px 21px rgb(67 123 69); */
 }
+
 .cta-button {
     background-color: #92ff44;
     color: white;
@@ -305,7 +307,8 @@ button {
     color: #2f5356;
 }
 
-.detalle-contenido-container, .pantalla-confirmacion {
+.detalle-contenido-container,
+.pantalla-confirmacion {
     display: flex;
     justify-content: space-around;
     gap: 20px;
@@ -841,9 +844,11 @@ button:hover {
     text-align: center;
     background-color: #fff;
 }
-.card#donar{
+
+.card#donar {
     width: 280px;
 }
+
 .card img {
     width: 100%;
     height: auto;
@@ -991,8 +996,7 @@ button:hover {
 
 h2 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     color: #eeffef;
 }
 
@@ -1035,7 +1039,7 @@ h2 {
 }
 
 .btn-login:hover {
-/*     background-color: #226122; */
+    /*     background-color: #226122; */
     background-color: #194d19;
 }
 
@@ -1156,11 +1160,12 @@ h2 {
     border-color: #92ff44;
     outline: none;
 }
+
 .btn-next,
 .btn-submit {
     width: 100%;
     padding: 12px;
-/*     background-color: #2f5356; */
+    /*     background-color: #2f5356; */
     background-color: green;
     color: white;
     border: none;
@@ -1168,13 +1173,15 @@ h2 {
     font-size: 1.1em;
     cursor: pointer;
 }
+
 .btn-next.btn1 {
     width: 48%;
 }
-.btn-cancel_1{
+
+.btn-cancel_1 {
     width: 48%;
     padding: 12px;
-/*     background-color: #2f5356; */
+    /*     background-color: #2f5356; */
     background-color: #6e0909c9;
     background-color: #8a2424;
     color: white;
@@ -1183,10 +1190,11 @@ h2 {
     font-size: 1.1em;
     cursor: pointer;
 }
-.btn-cancel{
+
+.btn-cancel {
     width: 48%;
     padding: 12px;
-/*     background-color: #2f5356; */
+    /*     background-color: #2f5356; */
     background-color: #6e0909c9;
     background-color: #8a2424;
     background-color: #6e0909cf;
@@ -1196,13 +1204,16 @@ h2 {
     font-size: 1.1em;
     cursor: pointer;
 }
-.btn-cancel:hover, .btn-cancel_1:hover{
+
+.btn-cancel:hover,
+.btn-cancel_1:hover {
     background-color: #6e0909;
 }
-.btn-previous{
+
+.btn-previous {
     width: 48%;
     padding: 12px;
-/*     background-color: #2f5356; */
+    /*     background-color: #2f5356; */
     background-color: #6e0909c9;
     background-color: #6c757d;
     background-color: #77956d;
@@ -1214,21 +1225,25 @@ h2 {
     font-size: 1.1em;
     cursor: pointer;
 }
-.btn-previous:hover{
+
+.btn-previous:hover {
     background-color: #527347;
     background-color: #6e0909;
 }
+
 .btn-next:hover,
 .btn-submit:hover {
     /* background-color: #92ff44; */
     background-color: #194d19;
 }
-.cancelar_siguiente{
+
+.cancelar_siguiente {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 1%;
 }
+
 .error-message {
     font-size: 0.9em;
     color: red;
@@ -1448,7 +1463,7 @@ h2 {
 }
 
 #tarjeta-info input[type="text"],
-.contenedor input[type="text"]{
+.contenedor input[type="text"] {
     letter-spacing: 2px;
 }
 
@@ -1465,7 +1480,8 @@ input[type="file"] {
 input[type="select"],
 #availability,
 #pets-allowed,
-#animal-type, #payment-method {
+#animal-type,
+#payment-method {
     background-color: white;
     height: 40px;
     width: 100%;
@@ -1476,7 +1492,8 @@ input[type="textarea"],
 #experience,
 #animal-condition,
 #resources,
-#description, #comments {
+#description,
+#comments {
     width: 100%;
     height: 100px;
     border-radius: 5px;
@@ -1525,7 +1542,11 @@ input[type="textarea"],
 .donacion-form input[type="email"],
 .donacion-form input[type="number"],
 .donacion-form input[type="month"],
-.donacion-form select,#transferencia-id, #card-number,#expiry-date,#cvv  {
+.donacion-form select,
+#transferencia-id,
+#card-number,
+#expiry-date,
+#cvv {
     width: 100%;
     padding: 12px;
     margin-top: 8px;
@@ -1535,10 +1556,15 @@ input[type="textarea"],
     box-sizing: border-box;
     background-color: #fff;
 }
-#transferencia-id, #card-number,#expiry-date,#cvv {
+
+#transferencia-id,
+#card-number,
+#expiry-date,
+#cvv {
     margin-bottom: 5%;
     margin-top: 0%;
 }
+
 .donacion-form input[type="text"]:focus,
 .donacion-form input[type="email"]:focus,
 .donacion-form input[type="number"]:focus,
@@ -2014,9 +2040,11 @@ input[type="textarea"],
 .cta-button#eventos {
     margin: 10% 1% 1% 1%;
 }
-#guia-perritos-hero{
-    background:url(images/guia.jpeg) no-repeat center center / cover;
+
+#guia-perritos-hero {
+    background: url(images/guia.jpeg) no-repeat center center / cover;
 }
+
 .input-wrapper {
     display: flex;
     align-items: center;
@@ -2025,22 +2053,24 @@ input[type="textarea"],
     padding: 5px;
     background-color: #f1fff030;
 }
-  .input-icon {
+
+.input-icon {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-  }
-  
-  .input-wrapper input {
+}
+
+.input-wrapper input {
     border: none;
     outline: none;
     width: 100%;
-  }
-  
-  .input-wrapper input::placeholder {
+}
+
+.input-wrapper input::placeholder {
     color: #aaa;
-  }
-  .toggle-password {
+}
+
+.toggle-password {
     width: 30px;
     height: 20px;
     cursor: pointer;
@@ -2048,4 +2078,95 @@ input[type="textarea"],
     margin-left: 1px;
     border-radius: 5px;
     padding: 11px 4px;
-  }
+}
+
+
+
+.adoptados-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.adoptados-carousel h2 {
+    margin-top: 79px;
+    margin-bottom: 2px;
+}
+
+.adoptados-carousel p {
+    font-size: 18px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    /* Ajusta según necesites */
+    margin: 0 auto;
+    padding: 110px 25px;
+    padding: 10px 25px 110px;
+    padding: 36px 25px 110px;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: max-content;
+    /* Se adapta al número de imágenes */
+}
+
+.carousel-images img {
+    width: 200px;
+    /* Ajusta el tamaño de las imágenes */
+    margin-right: 10px;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+button.prev {
+    left: -40px;
+}
+
+button.next {
+    right: -40px;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
