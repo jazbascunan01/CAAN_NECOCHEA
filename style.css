@@ -917,7 +917,12 @@ button:hover {
     color: #2f5356;
     margin-top: 0px;
 }
-
+.quienes-somos h2{
+    margin-bottom: 25px;
+}
+.quienes-somos p{
+    margin-bottom: 39px;
+}
 .proyecto {
     margin-bottom: 1.5rem;
     border-left: 5px solid #8ecdb8;
