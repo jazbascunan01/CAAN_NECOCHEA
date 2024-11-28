@@ -786,6 +786,7 @@ button:hover {
 .faq {
     padding: 40px 20px;
     text-align: center;
+    padding-bottom: 130px;
 }
 
 .faq h2 {
