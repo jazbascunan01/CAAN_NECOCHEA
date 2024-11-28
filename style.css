@@ -115,6 +115,7 @@ button {
 .hero#nosotros-hero {
     background: url('images/Caan.jpg') no-repeat center center/cover;
     height: 70vh;
+    text-shadow: 1px 8px 8px rgba(0, 0, 0, 1.75);
 }
 
 .hero-content {
