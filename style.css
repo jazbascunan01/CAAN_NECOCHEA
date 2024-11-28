@@ -10,7 +10,9 @@ body {
     background-color: #eeffef;
     overflow-x: hidden;
 }
-
+.preguntas_frecuentes{
+    margin-bottom: 45px!important;
+}
 a {
     text-decoration: none;
     color: #92ff44;
