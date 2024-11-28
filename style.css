@@ -98,6 +98,17 @@ button {
     /* Fondo semi-transparente */
     border-radius: 4px;
 }
+/* Estilo para el enlace activo */
+.nav li a.active {
+    color: #b7fca9; /* Mismo color del hover */
+    background-color: rgba(50, 114, 37, 0.127); /* Fondo semi-transparente */
+    border-radius: 4px;
+}
+
+/* Estilo para el subrayado del enlace activo */
+.nav li a.active::after {
+    width: 100%; /* Subrayado completo */
+}
 
 /* ================================================================
   ||                    SECCIÓN HERO (DESTACADA)                  ||
