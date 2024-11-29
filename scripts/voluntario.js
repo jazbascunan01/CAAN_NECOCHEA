@@ -131,3 +131,19 @@ document.getElementById("back-home").addEventListener("click", function (event) 
     event.preventDefault();
     window.location.href = "/index.html";
 });
+// Obtener el origen desde el localStorage
+const origin = localStorage.getItem('origin');
+
+// Seleccionar el botón "Volver"
+const volverBtn = document.querySelector('#volver-lista');
+
+// Ajustar el enlace del botón "Volver" dependiendo de la página de origen
+if (origin === 'donar') {
+    volverBtn.setAttribute('href', 'donar.html'); // Redirigir al página de donar
+} else if (origin === 'opciones') {
+    volverBtn.setAttribute('href', 'opciones.html'); // Redirigir a la página de opciones
+} else if (origin === 'inicio') {
+    volverBtn.setAttribute('href', 'index.html'); // Redirigir al inicio
+} else {
+    volverBtn.setAttribute('href', 'index.html'); // Valor predeterminado, en caso de que no haya valor
+}

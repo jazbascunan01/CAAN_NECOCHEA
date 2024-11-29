@@ -73,3 +73,6 @@ function updateNav() {
 document.addEventListener('DOMContentLoaded', function () {
     updateNav();  // Asegúrate de que esto se ejecute cuando la página está completamente cargada
 });
+function setOrigin(origin) {
+    localStorage.setItem('origin', origin);
+}
