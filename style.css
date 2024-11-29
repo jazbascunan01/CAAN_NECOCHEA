@@ -1028,7 +1028,9 @@ a.volver{
     margin-top: 0%;
     padding-bottom: 142px;
 }
-
+#event_form{
+    flex-direction: column;
+}
 .register-container {
     padding-bottom: 183px;
 }
