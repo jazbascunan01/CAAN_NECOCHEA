@@ -27,9 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.event-card').addEventListener('click', function () {
         window.location.href = 'eventos.html';
     });
-    document.querySelector('.volunteer-card').addEventListener('click', function () {
-        window.location.href = 'login.html';
-    });
+    if (user) {
+        document.querySelector('.volunteer-card').addEventListener('click', function () {
+            window.location.href = 'voluntario.html';
+        });
+    }
+    else{
+        document.querySelector('.volunteer-card').addEventListener('click', function () {
+            window.location.href = 'login.html';
+        });
+    }
     document.querySelector('.donar-card').addEventListener('click', function () {
         window.location.href = 'donar.html';
     });
