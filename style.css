@@ -2325,3 +2325,6 @@ button.next {
     transition-property: transform, opacity; /* Especifica qué propiedades transicionar */
     transition-duration: 0.6s; /* Ajusta el tiempo de transición */
 }
+.step-donacion{
+    width: 100%;
+}
