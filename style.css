@@ -10,9 +10,11 @@ body {
     background-color: #eeffef;
     overflow-x: hidden;
 }
-.preguntas_frecuentes{
-    margin-bottom: 45px!important;
+
+.preguntas_frecuentes {
+    margin-bottom: 45px !important;
 }
+
 a {
     text-decoration: none;
     color: #92ff44;
@@ -98,16 +100,20 @@ button {
     /* Fondo semi-transparente */
     border-radius: 4px;
 }
+
 /* Estilo para el enlace activo */
 .nav li a.active {
-    color: #b7fca9; /* Mismo color del hover */
-    background-color: rgba(50, 114, 37, 0.127); /* Fondo semi-transparente */
+    color: #b7fca9;
+    /* Mismo color del hover */
+    background-color: rgba(50, 114, 37, 0.127);
+    /* Fondo semi-transparente */
     border-radius: 4px;
 }
 
 /* Estilo para el subrayado del enlace activo */
 .nav li a.active::after {
-    width: 100%; /* Subrayado completo */
+    width: 100%;
+    /* Subrayado completo */
 }
 
 /* ================================================================
@@ -281,7 +287,7 @@ button {
 .info-item:hover {
     cursor: pointer;
     scale: 105%;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s!important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s !important;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
     color: white;
 }
@@ -639,9 +645,11 @@ button:hover {
 #contenedor-eventos {
     padding-bottom: 208px;
 }
-.eventos_preg{
-    padding-bottom: 160px!important;
+
+.eventos_preg {
+    padding-bottom: 160px !important;
 }
+
 .tarjeta-image {
     height: auto;
     width: 100%;
@@ -657,8 +665,9 @@ button:hover {
     transition: transform 0.3s;
     background-color: #b9dfd1;
 }
-.tarjeta-perro{
-    margin-bottom:40px;
+
+.tarjeta-perro {
+    margin-bottom: 40px;
 }
 
 .tarjeta-perro:hover,
@@ -724,7 +733,8 @@ button:hover {
     background: url('images/GettyImages-1423623555.webp') no-repeat center center/cover;
     height: 70vh;
 }
-#content_event{
+
+#content_event {
     z-index: 10;
     position: relative;
 }
@@ -928,14 +938,17 @@ button:hover {
     color: #2f5356;
     margin-top: 0px;
 }
-.quienes-somos h2{
+
+.quienes-somos h2 {
     margin-bottom: 25px;
 }
-.quienes-somos p{
+
+.quienes-somos p {
     margin-bottom: 39px;
     font-size: 1.2rem;
 }
-.regresar{
+
+.regresar {
     z-index: 20;
     position: relative;
     width: 100%;
@@ -944,12 +957,14 @@ button:hover {
     justify-content: left;
     display: flex;
 }
-a.volver{
+
+a.volver {
     text-decoration: underline;
     color: #3e5731;
     font-size: 1.2rem;
     margin-left: 2%;
 }
+
 .proyecto {
     margin-bottom: 1.5rem;
     border-left: 5px solid #8ecdb8;
@@ -1028,9 +1043,11 @@ a.volver{
     margin-top: 0%;
     padding-bottom: 142px;
 }
-#event_form{
+
+#event_form {
     flex-direction: column;
 }
+
 .register-container {
     padding-bottom: 183px;
 }
@@ -1393,15 +1410,15 @@ h2 {
     width: 300px;
     text-align: center;
     box-shadow: 5px 4px 8px rgb(0 105 48 / 84%);
-    transition: transform 0.3s!important;
+    transition: transform 0.3s !important;
     background-color: #b9dfd1;
 }
 
 .card:hover {
     cursor: pointer;
     scale: 105%;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s!important;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7)!important;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 5s !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7) !important;
     color: white;
 }
 
@@ -1841,7 +1858,8 @@ input[type="textarea"],
     .cta-button#contactarnos {
         width: 15%;
     }
-    .wave-container#donar{
+
+    .wave-container#donar {
         top: -173px;
         margin-bottom: -223px;
     }
@@ -1908,12 +1926,14 @@ input[type="textarea"],
         position: relative;
         padding-bottom: 76px;
     }
+
     .logout-dropdown {
         left: 40px;
         top: 312px !important;
         width: 15%;
     }
-    .wave-container#donar{
+
+    .wave-container#donar {
         top: -82px;
         margin-bottom: -124px;
     }
@@ -1964,7 +1984,8 @@ input[type="textarea"],
     h2 {
         font-size: 22px;
     }
-    .wave-container#donar{
+
+    .wave-container#donar {
         top: 14px;
         margin-bottom: -11px;
     }
@@ -1988,6 +2009,7 @@ input[type="textarea"],
         top: -107px;
         margin-bottom: -122px;
     }
+
     .logout-dropdown {
         width: 20%;
     }
@@ -2017,10 +2039,12 @@ input[type="textarea"],
         margin-bottom: -130px;
         top: -123px;
     }
+
     .logout-dropdown {
         width: 25%;
     }
-    .wave-container#donar{
+
+    .wave-container#donar {
         top: 88px;
         margin-bottom: 75px;
     }
@@ -2030,6 +2054,7 @@ input[type="textarea"],
     .wave-container-footer {
         top: -59px;
     }
+
     .logout-dropdown {
         width: 30%;
     }
@@ -2265,13 +2290,16 @@ button.next {
     padding-bottom: 10px;
     padding-left: 25px;
 }
-.img_li{
+
+.img_li {
     width: 25px;
     height: 25px;
 }
-#adopta-hero{
-    background: url('images/destacada-perros-adoptados.jpg') no-repeat center center/cover; 
+
+#adopta-hero {
+    background: url('images/destacada-perros-adoptados.jpg') no-repeat center center/cover;
 }
+
 /* Estilos para el modal */
 .modal {
     display: none;
@@ -2292,7 +2320,8 @@ button.next {
     max-width: 700px;
 }
 
-.prev-modal, .next-modal {
+.prev-modal,
+.next-modal {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -2321,10 +2350,17 @@ button.next {
     font-weight: bold;
     cursor: pointer;
 }
+
 [data-aos] {
-    transition-property: transform, opacity; /* Especifica qué propiedades transicionar */
-    transition-duration: 0.6s; /* Ajusta el tiempo de transición */
+    transition-property: transform, opacity;
+    /* Especifica qué propiedades transicionar */
+    transition-duration: 0.6s;
+    /* Ajusta el tiempo de transición */
 }
-.step-donacion{
+
+.step-donacion {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
