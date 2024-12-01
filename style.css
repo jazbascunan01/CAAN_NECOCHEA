@@ -1736,6 +1736,7 @@ input[type="textarea"],
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-bottom: 30px;
+    z-index: 20;
 }
 
 .contenedor form {
@@ -1773,7 +1774,7 @@ input[type="textarea"],
 
 .contenedor button {
     padding: 10px 20px;
-    background-color: #8ecdb8;
+    background-color: green;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -1783,7 +1784,7 @@ input[type="textarea"],
 }
 
 .contenedor button:hover {
-    background-color: #2f5356;
+    background-color: rgb(15, 97, 15);
 }
 
 .ubicacion {
