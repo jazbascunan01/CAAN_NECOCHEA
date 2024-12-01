@@ -7,15 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
+    
     document.querySelector('.logo-container').addEventListener('click', function () {
         window.location.href = 'index.html';
     });
+    
+    // Ejecutar actualización del menú y mostrar el nombre del usuario
     updateNav();
+
     // Obtiene la URL de la página actual
     const currentPage = window.location.pathname.split("/").pop();
 
     // Selecciona todos los enlaces de navegación
     const navLinks = document.querySelectorAll(".nav a");
+
     // Itera sobre los enlaces para comprobar cuál coincide con la página actual
     navLinks.forEach(link => {
         if (link.getAttribute("href") === currentPage) {
@@ -69,10 +74,6 @@ function updateNav() {
     }
 }
 
-// Ejecutar la función cuando la página cargue
-document.addEventListener('DOMContentLoaded', function () {
-    updateNav();  // Asegúrate de que esto se ejecute cuando la página está completamente cargada
-});
 function setOrigin(origin) {
     localStorage.setItem('origin', origin);
 }
